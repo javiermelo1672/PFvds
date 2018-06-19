@@ -1,0 +1,56 @@
+<ion-content padding id="page9">
+  <h3 id="hola-heading6" style="color:#000000;text-align:center;">
+    ¡Hola de nuevo !
+  </h3>
+
+  <ion-list>
+
+    <ion-item *ngFor="let item of usuariosreference$ | async ">
+  
+     
+      
+      <ion-avatar>
+        <img style="width: 100px; height: 100px;" src= {{item.Foto}}>
+      </ion-avatar>
+       <h1>{{item.Nombre}}</h1>  
+       <h1>{{item.Telefono}}</h1> 
+       
+  
+      </ion-item>
+      
+    
+  </ion-list>
+  <div id="hola-markdown5" style="text-align:center;" class="show-list-numbers-and-dots">
+    <h5 style="color:#000000;">
+      Aquí hay alguna información de tu intéres
+    </h5>
+  </div>
+  <ion-list id="hola-list4">
+    <ion-item color="none" id="hola-list-item3">
+      Item
+    </ion-item>
+  </ion-list>
+  <div id="hola-markdown6" style="text-align:center;" class="show-list-numbers-and-dots">
+    <h5 style="color:#000000;">
+      Noticias
+    </h5>
+  </div>
+  <ion-list>
+
+    <ion-item *ngFor="let item of noticiasreference$ | async ">
+  
+     
+      
+      <ion-avatar>
+        <img style="width: 100px; height: 100px;" src= {{items.Imagen}}>
+      </ion-avatar>
+       
+       
+  
+      </ion-item>
+    
+  </ion-list>
+  <button id="hola-button8" ion-button color="positive" block>
+    Continuar
+  </button>
+</ion-content>
