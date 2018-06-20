@@ -16,8 +16,8 @@ export class ConfiguraciNClientePage {
   // should be each tab's root Page
   constructor(public navCtrl: NavController) {
   }
-  goToAAdirTarjetas(params){
-    if (!params) params = {};
+  goToAAdirTarjetas(){
+    
     //hola
     this.navCtrl.push(AAdirTarjetasPage);
   }

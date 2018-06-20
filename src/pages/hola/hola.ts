@@ -18,6 +18,7 @@ import{NoticiasService} from '../../services/Noticias/noticias-service';
 
 
 import { AAdirVehCuloPage } from '../a-adir-veh-culo/a-adir-veh-culo';
+import {ConfiguraciNClientePage} from '../configuraci-ncliente/configuraci-ncliente'
 @Component({
   selector: 'page-hola',
   templateUrl: 'hola.html'
@@ -72,6 +73,6 @@ export class HolaPage {
     this.navCtrl.push(AAdirVehCuloPage);
   }
   gotoConfiguracion(){
-    this.navCtrl.push(AAdirVehCuloPage);
+    this.navCtrl.push(ConfiguraciNClientePage);
   }
 }
