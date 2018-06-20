@@ -9,7 +9,7 @@ import {AngularFireDatabase} from 'angularfire2/database';
 import {AlertController} from 'ionic-angular';
 import { AngularFireModule } from 'angularfire2';
 
-
+//dff
 @Component({
   selector: 'page-a-adir-veh-culo',
   templateUrl: 'a-adir-veh-culo.html'
