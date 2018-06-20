@@ -18,21 +18,8 @@ export class ConfiguraciNClientePage {
   }
   goToAAdirTarjetas(params){
     if (!params) params = {};
+    //hola
     this.navCtrl.push(AAdirTarjetasPage);
-  }goToIniciarSesiN(params){
-    if (!params) params = {};
-    this.navCtrl.push(IniciarSesiNPage);
-  }goToRegistro(params){
-    if (!params) params = {};
-    this.navCtrl.push(RegistroPage);
-  }goToUPSNecesitasPermisos(params){
-    if (!params) params = {};
-    this.navCtrl.push(UPSNecesitasPermisosPage);
-  }goToRegistroAdmin(params){
-    if (!params) params = {};
-    this.navCtrl.push(RegistroAdminPage);
-  }goToHola(params){
-    if (!params) params = {};
-    this.navCtrl.push(HolaPage);
   }
+  
 }
