@@ -4,6 +4,7 @@ import { NavController } from 'ionic-angular';
 import {VehiculosService} from '../../services/Vehiculos/vehiculos-service';
 import {Vehiculo} from '../../models/Vehiculos';
 //añadiendo algunas dependencias de angularfire2,alert..
+// añadiendo otras dependencias
 import {Observable} from 'rxjs/Observable';
 import {AngularFireDatabase} from 'angularfire2/database';
 import {AlertController} from 'ionic-angular';
