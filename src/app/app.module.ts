@@ -11,7 +11,6 @@ import { ConfiguraciNAdminPage } from '../pages/configuraci-nadmin/configuraci-n
 import { TabsControllerPage } from '../pages/tabs-controller/tabs-controller';
 import { IniciarSesiNPage } from '../pages/iniciar-sesi-n/iniciar-sesi-n';
 import { RegistroPage } from '../pages/registro/registro';
-import { EditarPerfilClientePage } from '../pages/editar-perfil-cliente/editar-perfil-cliente';
 import { RegistroAdminPage } from '../pages/registro-admin/registro-admin';
 import { EditarPerfilAdminPage } from '../pages/editar-perfil-admin/editar-perfil-admin';
 import { UPSNecesitasPermisosPage } from '../pages/upsnecesitas-permisos/upsnecesitas-permisos';
@@ -55,7 +54,6 @@ import {VehiculosService} from '../services/Vehiculos/vehiculos-service';
     TabsControllerPage,
     IniciarSesiNPage,
     RegistroPage,
-    EditarPerfilClientePage,
     RegistroAdminPage,
     EditarPerfilAdminPage,
     UPSNecesitasPermisosPage,
@@ -89,7 +87,6 @@ import {VehiculosService} from '../services/Vehiculos/vehiculos-service';
     TabsControllerPage,
     IniciarSesiNPage,
     RegistroPage,
-    EditarPerfilClientePage,
     RegistroAdminPage,
     EditarPerfilAdminPage,
     UPSNecesitasPermisosPage,

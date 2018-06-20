@@ -7,13 +7,12 @@
 </ion-header>
 <ion-content padding id="page4">
   <ion-list id="configuraciNCliente-list10">
-    <ion-item color="none" id="configuraciNCliente-list-item9">
-      <ion-avatar item-left>
-        <img />
+    <ion-item *ngFor="let item of usuariosreference$ | async " detail-push navPush="EditarPerfilClientePage"  >
+      <ion-avatar>
+        <img style="width: 50px; height: 50px;" src= {{item.Foto}}>
       </ion-avatar>
-      <h2>
-        Item
-      </h2>
+       <h1>{{item.Nombre}}</h1>  
+       
     </ion-item>
   </ion-list>
   <button id="configuraciNCliente-button9" ion-button color="positive" block icon-right on-click="goToAAdirTarjetas()">

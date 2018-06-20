@@ -1,66 +1,90 @@
+<!--
+  Generated template for the EditarPerfilClientePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
 <ion-header>
+
   <ion-navbar>
-    <ion-title>
-      Editar Perfil Cliente
-    </ion-title>
+    <ion-title>Actualiza tú perfil</ion-title>
   </ion-navbar>
+
 </ion-header>
-<ion-content padding id="page14">
-  <form id="editarPerfilCliente-form6">
-    <h4 id="editarPerfilCliente-heading16" style="color:#000000;font-weight:400;text-align:center;">
-      ¡Suele suceder, pero tranquis, puedes cambiar tu foto!
+
+
+<ion-content padding>
+  <form id="registro-form2">
+    <h4 id="registro-heading3" style="color:#000000;font-weight:400;text-align:center;">
+      ¡Estas a un solo paso de vivir la experiencia Vehicolda!
     </h4>
-    <ion-list id="editarPerfilCliente-list18">
-      <ion-item id="editarPerfilCliente-input23">
+    <ion-list id="registro-list2">
+      <ion-item id="registro-input3">
         <ion-label>
           Nombre
         </ion-label>
-        <ion-input type="text" placeholder=""></ion-input>
+        <ion-input type="text"  placeholder=""></ion-input>
       </ion-item>
-      <ion-item id="editarPerfilCliente-input24">
+      <ion-item id="registro-input4">
         <ion-label>
           Foto
+        </ion-label>
+        <ion-input type="text"  placeholder=""></ion-input>
+      </ion-item>
+      <ion-item id="registro-input8">
+        <ion-label>
+          Correo
+        </ion-label>
+        <ion-input type="email" placeholder=""></ion-input>
+      </ion-item>
+      <ion-item id="registro-input5">
+        <ion-label>
+          Contraseña
+        </ion-label>
+        <ion-input type="text"  placeholder=""></ion-input>
+      </ion-item>
+      <ion-item id="registro-input6">
+        <ion-label>
+          #Documento
+        </ion-label>
+        <ion-input type="number"  placeholder=""></ion-input>
+      </ion-item>
+      <ion-item id="registro-input7">
+        <ion-label>
+          #Licencia
+        </ion-label>
+        <ion-input type="number"  placeholder=""></ion-input>
+      </ion-item>
+      <ion-item id="registro-input9">
+        <ion-label>
+          Foto Licencia
+        </ion-label>
+        <ion-input type="text"  placeholder=""></ion-input>
+      </ion-item>
+      <ion-item id="registro-input10">
+        <ion-label>
+          Foto Documento
+        </ion-label>
+        <ion-input type="text"  placeholder=""></ion-input>
+      </ion-item>
+      <ion-item id="registro-input16">
+        <ion-label>
+          Telefono
         </ion-label>
         <ion-input type="text" placeholder=""></ion-input>
       </ion-item>
     </ion-list>
-    <ion-item id="editarPerfilCliente-input27">
-      <ion-label>
-        #Documento
-      </ion-label>
-      <ion-input type="number" placeholder=""></ion-input>
-    </ion-item>
-    <ion-item id="editarPerfilCliente-input28">
-      <ion-label>
-        #Licencia
-      </ion-label>
-      <ion-input type="number" placeholder=""></ion-input>
-    </ion-item>
-    <ion-item id="editarPerfilCliente-input29">
-      <ion-label>
-        Foto Licencia
-      </ion-label>
-      <ion-input type="text" placeholder=""></ion-input>
-    </ion-item>
-    <ion-item id="editarPerfilCliente-input30">
-      <ion-label>
-        Foto Documento
-      </ion-label>
-      <ion-input type="text" placeholder=""></ion-input>
-    </ion-item>
-    <ion-item id="editarPerfilCliente-input17">
-      <ion-label>
-        Telefono
-      </ion-label>
-      <ion-input type="number" placeholder=""></ion-input>
-    </ion-item>
-    <div id="editarPerfilCliente-markdown9" style="text-align:center;" class="show-list-numbers-and-dots">
+    
+    <div id="registro-markdown1" style="text-align:center;" class="show-list-numbers-and-dots">
       <p style="color:#000000;">
-        Recuerda actualizar información verídica, de lo contraria tu perfíl será desabilitado
+        Al hacer click en registrar aceptas todos los términos legales y de privacidad de
+        <strong>
+          Vehicolda
+        </strong>
       </p>
     </div>
-    <button id="editarPerfilCliente-button21" ion-button color="positive" block>
-      Actualizar
+    <button id="registro-button4" ion-button color="positive"  (click)="goToInicio(userst,userCli)" block>
+      ¡Regístrate!
     </button>
   </form>
 </ion-content>
