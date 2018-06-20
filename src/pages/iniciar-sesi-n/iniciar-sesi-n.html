@@ -1,0 +1,35 @@
+<ion-content padding id="page5" style="background-color:#FFFFFF;">
+  <img src="assets/img/bt4P4EWOSxyZ7Z5szbD9_VEHICOLDA.png" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" />
+  <h4 id="iniciarSesiN-heading1" style="color:#000000;font-weight:400;text-align:center;">
+    ¡Hola!, es un placer para nosotros tenerte aquí
+  </h4>
+  <form id="iniciarSesiN-form1">
+    
+    <h5 id="iniciarSesiN-heading2" style="color:#000000;text-align:center;">
+      Por favor inicia sesión antes de continuar
+    </h5>
+    <ion-list id="iniciarSesiN-list1">
+      <ion-item id="iniciarSesiN-input1">
+        <ion-label>
+          Correo
+        </ion-label>
+        <ion-input type="text" [(ngModel)]=" userst.email" name="Usuario" placeholder=""></ion-input>
+      </ion-item>
+      <ion-item id="iniciarSesiN-input2">
+        <ion-label>
+          Contraseña
+        </ion-label>
+        <ion-input type="password"  [(ngModel)]=" userst.password" name="Contraseña" placeholder=""></ion-input>
+      </ion-item>
+    </ion-list>
+    <button id="iniciarSesiN-button1" ion-button color="positive" block (click)="goToHola(userst)" >
+      Iniciar Sesión
+    </button>
+    <button id="iniciarSesiN-button4" ion-button color="balanced" block style="border-radius:1px 1px 1px 1px;" on-click="goToRegistro()">
+      Crea tu cuenta Vehicolda
+    </button>
+    <button id="iniciarSesiN-button3" ion-button color="dark" block on-click="goToUPSNecesitasPermisos()">
+      Sección Administrativa Vehiicolda
+    </button>
+  </form>
+</ion-content>

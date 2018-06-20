@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Registro
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page6">
+  <form id="registro-form2">
+    <h4 id="registro-heading3" style="color:#000000;font-weight:400;text-align:center;">
+      ¡Estas a un solo paso de vivir la experiencia Vehicolda!
+    </h4>
+    <ion-list id="registro-list2">
+      <ion-item id="registro-input3">
+        <ion-label>
+          Nombre
+        </ion-label>
+        <ion-input type="text" [(ngModel)]='userCli.Nombre' name="Nombre" placeholder=""></ion-input>
+      </ion-item>
+      <ion-item id="registro-input4">
+        <ion-label>
+          Foto
+        </ion-label>
+        <ion-input type="text" [(ngModel)]='userCli.Foto' name="Foto" placeholder=""></ion-input>
+      </ion-item>
+      <ion-item id="registro-input8">
+        <ion-label>
+          Correo
+        </ion-label>
+        <ion-input type="email" [(ngModel)]='userst.email' name= "Correo" placeholder=""></ion-input>
+      </ion-item>
+      <ion-item id="registro-input5">
+        <ion-label>
+          Contraseña
+        </ion-label>
+        <ion-input type="text" [(ngModel)]='userst.password' name= "Contraseña" placeholder=""></ion-input>
+      </ion-item>
+      <ion-item id="registro-input6">
+        <ion-label>
+          #Documento
+        </ion-label>
+        <ion-input type="number" [(ngModel)]='userCli.NoDocumento' name="Documento" placeholder=""></ion-input>
+      </ion-item>
+      <ion-item id="registro-input7">
+        <ion-label>
+          #Licencia
+        </ion-label>
+        <ion-input type="number" [(ngModel)]='userCli.NoLicencia' name="Licnecia" placeholder=""></ion-input>
+      </ion-item>
+      <ion-item id="registro-input9">
+        <ion-label>
+          Foto Licencia
+        </ion-label>
+        <ion-input type="text" [(ngModel)]='userCli.FotoLicencia' name="FotoLicencia"  placeholder=""></ion-input>
+      </ion-item>
+      <ion-item id="registro-input10">
+        <ion-label>
+          Foto Documento
+        </ion-label>
+        <ion-input type="text" [(ngModel)]='userCli.FotoDocumento' name="FotoDocumento" placeholder=""></ion-input>
+      </ion-item>
+      <ion-item id="registro-input16">
+        <ion-label>
+          Telefono
+        </ion-label>
+        <ion-input type="text" [(ngModel)]='userCli.Telefono' name="Telefono" placeholder=""></ion-input>
+      </ion-item>
+    </ion-list>
+    
+    <div id="registro-markdown1" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">
+        Al hacer click en registrar aceptas todos los términos legales y de privacidad de
+        <strong>
+          Vehicolda
+        </strong>
+      </p>
+    </div>
+    <button id="registro-button4" ion-button color="positive"  (click)="goToInicio(userst,userCli)" block>
+      ¡Regístrate!
+    </button>
+  </form>
+</ion-content>

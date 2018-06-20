@@ -1,0 +1,88 @@
+<!--
+  Generated template for the EditarVehiculoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>EditarVehiculo</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <form id="aAdirVehCulo-form11">
+        <div id="aAdirVehCulo-markdown16" style="text-align:center;" class="show-list-numbers-and-dots"></div>
+        <ion-item id="aAdirVehCulo-input46">
+          <ion-label>
+            Placa
+          </ion-label>
+          <ion-input type="text" [(ngModel)]='vehiculoobj.Placa' name="Placa" placeholder=""></ion-input>
+        </ion-item>
+        <ion-item id="aAdirVehCulo-input47">
+          <ion-label>
+            Color
+          </ion-label>
+          <ion-input type="text" [(ngModel)]='vehiculoobj.Color' name="Color" placeholder=""></ion-input>
+        </ion-item>
+        <ion-item id="aAdirVehCulo-input48">
+          <ion-label>
+            Modelo
+          </ion-label>
+          <ion-input type="text" [(ngModel)]='vehiculoobj.Modelo' name="Modelo" placeholder=""></ion-input>
+        </ion-item>
+        <ion-item id="aAdirVehCulo-input49">
+          <ion-label>
+            Marca
+          </ion-label>
+          <ion-input type="text" [(ngModel)]='vehiculoobj.Marca' name="Marca" placeholder=""></ion-input>
+        </ion-item>
+        <ion-item id="aAdirVehCulo-input50">
+          <ion-label>
+            Aseguradora
+          </ion-label>
+          <ion-input type="text" [(ngModel)]='vehiculoobj.Aseguradora' name="Aseguradora" placeholder=""></ion-input>
+        </ion-item>
+        <ion-item id="aAdirVehCulo-input51">
+          <ion-label>
+            Capacidad
+          </ion-label>
+          <ion-input type="text" [(ngModel)]='vehiculoobj.Capacidad' name="Capacidad" placeholder=""></ion-input>
+        </ion-item>
+        <ion-item id="aAdirVehCulo-input52">
+          <ion-label>
+            Información
+          </ion-label>
+          <ion-input type="text" [(ngModel)]='vehiculoobj.Informacion' name="Informacion" placeholder=""></ion-input>
+        </ion-item>
+        <ion-item id="aAdirVehCulo-input53">
+          <ion-label>
+            Foto
+          </ion-label>
+          <ion-input type="text" [(ngModel)]='vehiculoobj.Foto' name="Foto" placeholder=""></ion-input>
+        </ion-item>
+        <ion-item id="aAdirVehCulo-input54">
+          <ion-label>
+            Observaciones
+          </ion-label>
+          <ion-input type="text" [(ngModel)]='vehiculoobj.Observaciones' name="Observaciones"  placeholder=""></ion-input>
+        </ion-item>
+        <ion-item id="aAdirVehCulo-input55">
+          <ion-label>
+            Gasolina
+          </ion-label>
+          <ion-input type="text" [(ngModel)]='vehiculoobj.Gasolina' name="Gasolina" placeholder=""></ion-input>
+        </ion-item>
+      </form>
+      <button id="aAdirVehCulo-button26" ion-button color="positive"  block on-click="updateVehiculo(vehiculoobj)" block >
+          Editar
+        </button>
+        <button id="aAdirVehCulo-button26" ion-button color="positive" block on-click="removeVehiculo(vehiculoobj)" block>
+            Elimar
+          </button>
+
+</ion-content>
