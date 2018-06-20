@@ -71,5 +71,7 @@ export class HolaPage {
   gotoVehiculos(){
     this.navCtrl.push(AAdirVehCuloPage);
   }
-  
+  gotoConfiguracion(){
+    this.navCtrl.push(AAdirVehCuloPage);
+  }
 }

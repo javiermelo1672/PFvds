@@ -21,5 +21,6 @@ export class ConfiguraciNClientePage {
     //hola
     this.navCtrl.push(AAdirTarjetasPage);
   }
+  //Nuevo Comentario
   
 }
