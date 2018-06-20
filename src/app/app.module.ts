@@ -41,6 +41,7 @@ import {FIREBASE_CONFIG} from './app.firebase.config';
 
 import{UsuariosClienteService} from '../services/Usuarios/usuario-cliente-service';
 import{NoticiasService} from '../services/Noticias/noticias-service';
+import {VehiculosService} from '../services/Vehiculos/vehiculos-service';
 
 @NgModule({
   declarations: [
@@ -107,7 +108,8 @@ import{NoticiasService} from '../services/Noticias/noticias-service';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     //añadiendo servicio
     UsuariosClienteService,
-    NoticiasService
+    NoticiasService,
+    VehiculosService
   ]
 })
 export class AppModule {}

@@ -15,6 +15,9 @@ import { Observable } from 'rxjs/Observable';
 import { AlertController } from 'ionic-angular';
 
 import{NoticiasService} from '../../services/Noticias/noticias-service';
+
+
+import { AAdirVehCuloPage } from '../a-adir-veh-culo/a-adir-veh-culo';
 @Component({
   selector: 'page-hola',
   templateUrl: 'hola.html'
@@ -63,6 +66,10 @@ export class HolaPage {
     this.noticiasreference$ = this.noticiasser.getNoticiasList().valueChanges();
     this.usuariosreference$ = this.usuariosser.getSpecificUser(this.ids).valueChanges();
     
+  }
+
+  gotoVehiculos(){
+    this.navCtrl.push(AAdirVehCuloPage);
   }
   
 }
