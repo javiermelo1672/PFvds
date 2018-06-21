@@ -56,7 +56,7 @@ export class EditarVehiculoPage {
       this.vehiculosser.deleteVehiculosItem(vehiculoobj).then(()=> {
 
         let alert = this.alertCtrl.create({
-          title: 'CORECTO',
+          title: 'CORRECTO',
           subTitle: 'El Item ha sido ELIMINADO',
           buttons: ['Aceptar']
       
@@ -69,7 +69,7 @@ export class EditarVehiculoPage {
     catch(e)
     {
       let alert = this.alertCtrl.create({
-        title: 'EROR',
+        title: 'ERROR',
         subTitle: 'El Item NO ha sido ELIMINADO',
         buttons: ['Aceptar']
     
