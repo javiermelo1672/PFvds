@@ -8,7 +8,7 @@ import { AngularFireDatabase,AngularFireList} from 'angularfire2/database';
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 //ImplementandoModelos
-import { UsuarioCliente } from '../../models/UsuarioCliente';
+import {Persona } from '../../models/Persona';
 import { Noticias} from '../../models/Noticias';
 import 'rxjs/add/operator/map';
 import { Observable } from 'rxjs/Observable';
@@ -24,7 +24,7 @@ import {TabsAdminControllerPage } from '../tabs-admin-controller/tabs-admin-cont
   templateUrl: 'hola.html'
 })
 export class HolaPage {
-  item: UsuarioCliente = {
+  item: Persona = {
     Nombre: ' ',
     Foto: ' ',
     NoDocumento:' ',
@@ -41,10 +41,10 @@ export class HolaPage {
   }
 
   ids:string;
-  usuariosreference$: Observable <UsuarioCliente[]>;
+  usuariosreference$: Observable <Persona[]>;
   noticiasreference$: Observable <Noticias[]>;
   
-  usariosobj:UsuarioCliente;
+  usariosobj:Persona;
   Noticiasobj:Noticias;
   
   displayname:string;

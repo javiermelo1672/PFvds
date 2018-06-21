@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AngularFireAuth } from "angularfire2/auth";
 import { Usuario } from '../../models/Usuario';
-import { UsuarioCliente } from '../../models/UsuarioCliente';
+import { Persona } from '../../models/Persona';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabase,AngularFireList} from 'angularfire2/database';
 import {Observable} from 'rxjs/Observable';
