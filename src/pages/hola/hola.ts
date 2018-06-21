@@ -17,8 +17,8 @@ import { AlertController } from 'ionic-angular';
 import{NoticiasService} from '../../services/Noticias/noticias-service';
 
 
-import { AAdirVehCuloPage } from '../a-adir-veh-culo/a-adir-veh-culo';
-import {ConfiguraciNClientePage} from '../configuraci-ncliente/configuraci-ncliente'
+import { TabsControllerPage } from '../tabs-controller/tabs-controller';
+import {TabsAdminControllerPage } from '../tabs-admin-controller/tabs-admin-controller';
 @Component({
   selector: 'page-hola',
   templateUrl: 'hola.html'
@@ -69,10 +69,10 @@ export class HolaPage {
     
   }
 
-  gotoVehiculos(){
-    this.navCtrl.push(AAdirVehCuloPage);
+  gotoVistaCliente(){
+    this.navCtrl.push(TabsControllerPage);
   }
-  gotoConfiguracion(){
-    this.navCtrl.push(ConfiguraciNClientePage);
+  gotoVistaAdmin(){
+    this.navCtrl.push(TabsAdminControllerPage);
   }
 }

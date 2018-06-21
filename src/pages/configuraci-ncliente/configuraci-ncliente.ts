@@ -12,7 +12,7 @@ import { UsuarioCliente } from '../../models/UsuarioCliente';
 import { Observable } from 'rxjs/Observable';
 import { AlertController } from 'ionic-angular'
 import {EditarPerfilClientePage} from '../editar-perfil-cliente/editar-perfil-cliente';
-
+import {IniciarSesiNPage} from '../iniciar-sesi-n/iniciar-sesi-n';
 
 @Component({
   selector: 'page-configuraci-ncliente',
@@ -55,6 +55,11 @@ export class ConfiguraciNClientePage {
     //hola
     this.navCtrl.push(AAdirTarjetasPage);
   }
-  //Nuevo Comentario
+  //Acción para cerrar sesión
+
+  goToIniciarSesiN()
+  {
+   this.navCtrl.push(IniciarSesiNPage);
+  }
   
 }

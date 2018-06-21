@@ -8,7 +8,12 @@ import { HistorialPage } from '../pages/historial/historial';
 import { PanelDeHistorialPage } from '../pages/panel-de-historial/panel-de-historial';
 import { ConfiguraciNClientePage } from '../pages/configuraci-ncliente/configuraci-ncliente';
 import { ConfiguraciNAdminPage } from '../pages/configuraci-nadmin/configuraci-nadmin';
+
+//Se añaden tabs(vistas) para cada uno de los tipos de usuario
 import { TabsControllerPage } from '../pages/tabs-controller/tabs-controller';
+import {TabsAdminControllerPage } from '../pages/tabs-admin-controller/tabs-admin-controller';
+
+
 import { IniciarSesiNPage } from '../pages/iniciar-sesi-n/iniciar-sesi-n';
 import { RegistroPage } from '../pages/registro/registro';
 import { RegistroAdminPage } from '../pages/registro-admin/registro-admin';
@@ -52,6 +57,7 @@ import {VehiculosService} from '../services/Vehiculos/vehiculos-service';
     ConfiguraciNClientePage,
     ConfiguraciNAdminPage,
     TabsControllerPage,
+    TabsAdminControllerPage,
     IniciarSesiNPage,
     RegistroPage,
     RegistroAdminPage,
@@ -85,6 +91,7 @@ import {VehiculosService} from '../services/Vehiculos/vehiculos-service';
     ConfiguraciNClientePage,
     ConfiguraciNAdminPage,
     TabsControllerPage,
+    TabsAdminControllerPage,
     IniciarSesiNPage,
     RegistroPage,
     RegistroAdminPage,

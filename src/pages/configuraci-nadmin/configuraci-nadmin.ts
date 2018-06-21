@@ -16,10 +16,12 @@ export class ConfiguraciNAdminPage {
   goToAAdirCuenta(params){
     if (!params) params = {};
     this.navCtrl.push(AAdirCuentaPage);
-  }goToAAdirAseguradora(params){
+  }
+  goToAAdirAseguradora(params){
     if (!params) params = {};
     this.navCtrl.push(AAdirAseguradoraPage);
-  }goToAAdirVehCulo(params){
+  }
+  goToAAdirVehCulo(params){
     if (!params) params = {};
     this.navCtrl.push(AAdirVehCuloPage);
   }
