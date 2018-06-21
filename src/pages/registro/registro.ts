@@ -8,6 +8,7 @@ import { AngularFireDatabase,AngularFireList} from 'angularfire2/database';
 import {Observable} from 'rxjs/Observable';
 import { AlertController } from 'ionic-angular';
 import { TabsControllerPage } from '../tabs-controller/tabs-controller';
+import{PersonaService} from '../../services/Persona/persona-service';
 @Component({
   selector: 'page-registro',
   templateUrl: 'registro.html'
@@ -18,7 +19,7 @@ export class RegistroPage {
   ids:string;
   userst= {} as Usuario;
   userCli={} as Persona;
-  constructor(public navCtrl: NavController,private alertCtrl: AlertController,private databases:AngularFireDatabase, private afAuth: AngularFireAuth) {
+  constructor(public navCtrl: NavController,private alertCtrl: AlertController,private databases:AngularFireDatabase, private afAuth: AngularFireAuth,private usuariosser: PersonaService) {
   }
 
   async goToInicio(userst:Usuario,userCli:Persona)
@@ -35,23 +36,29 @@ export class RegistroPage {
         this.ids=this.afAuth.auth.currentUser.uid;
         console.log(this.ids);
 
-        
+        //Obtener Fecha del Registro
+        let date = new Date();
+        userCli.Fecha_Registro=date;
+        userCli.Tipo='Cliente';
+
         let sitio = {
-         Nombre: userCli.Nombre,
+         Edad:userCli.Edad,
+         Fecha_Registro:userCli.Fecha_Registro,
          Foto: userCli.Foto,
-         NoDocumento:userCli.Num_Documento,
-         NoLicencia: userCli.Num_Licencia,
-         FotoLicencia:userCli.Foto_Licencia,
-         FotoDocumento: userCli.Foto_documento,
-         Telefono:userCli.Telefono
+         Num_Documento:userCli.Num_Documento,
+         Num_Licencia: userCli.Num_Licencia,
+         Foto_Licencia:userCli.Foto_Licencia,
+         Foto_documento: userCli.Foto_documento,
+         Telefono:userCli.Telefono,
+         Nombre: userCli.Nombre,
+         Tipo:userCli.Tipo
          
        }
-       
-       this.databases.database.ref('UsuariosClientes/'+this.ids).set(sitio);
+       this.usuariosser.createUsuario(sitio,this.ids);
         
         
        let alert = this.alertCtrl.create({
-        title: 'Enhorabuena',
+        title: 'Enhorabuena :slightly_smiling:',
         subTitle: 'Hola ya estás en VehicoldaApp',
         buttons: ['Aceptar']
       });

@@ -11,7 +11,6 @@ import { Http } from '@angular/http';
 import { Persona } from '../../models/Persona';
 import { Observable } from 'rxjs/Observable';
 import { AlertController } from 'ionic-angular'
-import {EditarPerfilClientePage} from '../editar-perfil-cliente/editar-perfil-cliente';
 import {IniciarSesiNPage} from '../iniciar-sesi-n/iniciar-sesi-n';
 
 @Component({
