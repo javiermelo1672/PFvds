@@ -21,21 +21,6 @@ export class IniciarSesiNPage {
     if (!params) params = {};
     this.navCtrl.push(RegistroPage);
   }
-  goToUPSNecesitasPermisos(params){
-    if (!params) params = {};
-    this.navCtrl.push(UPSNecesitasPermisosPage);
-  }
-  goToRegistroAdmin(params){
-    if (!params) params = {};
-    this.navCtrl.push(RegistroAdminPage);
-  }
-  goToIniciarSesiN(params){
-
-
-
-    if (!params) params = {};
-    this.navCtrl.push(IniciarSesiNPage);
-  }
   
   //Pantalla inicial
   goToHola(userst:Usuario){
