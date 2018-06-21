@@ -17,11 +17,11 @@ export class RegistroPage {
   // should be each tab's root Page
   ids:string;
   userst= {} as Usuario;
-  userCli={} as UsuarioCliente;
+  userCli={} as Persona;
   constructor(public navCtrl: NavController,private alertCtrl: AlertController,private databases:AngularFireDatabase, private afAuth: AngularFireAuth) {
   }
 
-  async goToInicio(userst:Usuario,userCli:UsuarioCliente)
+  async goToInicio(userst:Usuario,userCli:Persona)
 
   {
 
@@ -39,10 +39,10 @@ export class RegistroPage {
         let sitio = {
          Nombre: userCli.Nombre,
          Foto: userCli.Foto,
-         NoDocumento:userCli.NoDocumento,
-         NoLicencia: userCli.NoLicencia,
-         FotoLicencia:userCli.FotoLicencia,
-         FotoDocumento: userCli.FotoDocumento,
+         NoDocumento:userCli.Num_Documento,
+         NoLicencia: userCli.Num_Licencia,
+         FotoLicencia:userCli.Foto_Licencia,
+         FotoDocumento: userCli.Foto_documento,
          Telefono:userCli.Telefono
          
        }

@@ -25,13 +25,17 @@ import {TabsAdminControllerPage } from '../tabs-admin-controller/tabs-admin-cont
 })
 export class HolaPage {
   item: Persona = {
-    Nombre: ' ',
+    Edad:' ',
+    Fecha_Registro:null,
     Foto: ' ',
-    NoDocumento:' ',
-    NoLicencia:' ',
-    FotoLicencia:' ',
-    FotoDocumento:' ',
-    Telefono: ' '
+    Num_Documento:' ',
+    Num_Licencia:' ',
+    Foto_Licencia:' ',
+    Foto_documento:' ',
+    Telefono: ' ',
+    Nombre: ' ',
+    Tipo: ' ',
+    
   }
 
   items: Noticias = {

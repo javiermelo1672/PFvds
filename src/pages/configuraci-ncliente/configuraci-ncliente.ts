@@ -22,13 +22,17 @@ export class ConfiguraciNClientePage {
   // this tells the tabs component which Pages
   // should be each tab's root Page
   item: Persona = {
-    Nombre: ' ',
+    Edad:' ',
+    Fecha_Registro:null,
     Foto: ' ',
-    NoDocumento:' ',
-    NoLicencia:' ',
-    FotoLicencia:' ',
-    FotoDocumento:' ',
-    Telefono: ' '
+    Num_Documento:' ',
+    Num_Licencia:' ',
+    Foto_Licencia:' ',
+    Foto_documento:' ',
+    Telefono: ' ',
+    Nombre: ' ',
+    Tipo: ' ',
+    
   }
   id:string;
   usuariosreference$: Observable <Persona[]>;
