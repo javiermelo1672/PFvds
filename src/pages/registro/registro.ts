@@ -35,9 +35,10 @@ export class RegistroPage {
         const result=await this.afAuth.auth.createUserWithEmailAndPassword(userst.email,userst.password);
         this.ids=this.afAuth.auth.currentUser.uid;
         console.log(this.ids);
-
+  
         //Obtener Fecha del Registro
         let date = new Date();
+        
         userCli.Fecha_Registro=date;
         userCli.Tipo='Cliente';
 
