@@ -5,7 +5,7 @@ import { UsuarioCliente} from '../../models/UsuarioCliente';
 export class UsuariosClienteService {
 
 
-    private Usuariosref= this.db.list<UsuarioCliente>('UsuariosClientes'); 
+    private Usuariosref = this.db.list<UsuarioCliente>('UsuariosClientes'); 
     private Usuariosespeci;
 
     constructor(private db: AngularFireDatabase){}
@@ -16,7 +16,7 @@ export class UsuariosClienteService {
     }
 
     getSpecificUser(id){
-       this.Usuariosespeci= this.db.list<UsuarioCliente>('/UsuariosClientes',ref => ref.orderByKey().equalTo(id));
+       this.Usuariosespeci= this.db.list<UsuarioCliente>('/BasedeDatosF/Empresa/Usuarios/',ref => ref.orderByKey().equalTo(id));
        
        return this.Usuariosespeci;
     }
@@ -30,4 +30,5 @@ export class UsuariosClienteService {
 
         return this.Usuariosref.remove(item.key);
     }
+
 }
