@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import { AngularFireDatabase} from 'angularfire2/database';
 import {Persona} from '../../models/Persona';
 @Injectable()
-export class UsuariosClienteService {
+export class PersonaService {
 
 
     private Usuariosref = this.db.list<Persona>('UsuariosClientes'); 

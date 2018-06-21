@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-import{UsuariosClienteService} from '../../services/Usuarios/usuario-cliente-service';
+import{PersonaService} from '../../services/Persona/persona-service';
 import { AngularFireAuth } from "angularfire2/auth";
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabase,AngularFireList} from 'angularfire2/database';
@@ -51,7 +51,7 @@ export class HolaPage {
   emails:string;
   // this tells the tabs component which Pages
   // should be each tab's root Page
-  constructor(private alertCtrl: AlertController,private afAuth: AngularFireAuth,public navCtrl: NavController,private databases:AngularFireDatabase,private usuariosser: UsuariosClienteService,private noticiasser: NoticiasService) {
+  constructor(private alertCtrl: AlertController,private afAuth: AngularFireAuth,public navCtrl: NavController,private databases:AngularFireDatabase,private usuariosser: PersonaService,private noticiasser: NoticiasService) {
     afAuth.authState.subscribe(user => {
       if (!user) {
         this.displayname = null;        

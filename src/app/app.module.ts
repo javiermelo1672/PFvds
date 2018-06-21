@@ -43,7 +43,7 @@ import {FIREBASE_CONFIG} from './app.firebase.config';
 
 //Importando servicios
 
-import{UsuariosClienteService} from '../services/Usuarios/usuario-cliente-service';
+import{PersonaService} from '../services/Persona/persona-service';
 import{NoticiasService} from '../services/Noticias/noticias-service';
 import {VehiculosService} from '../services/Vehiculos/vehiculos-service';
 
@@ -111,7 +111,7 @@ import {VehiculosService} from '../services/Vehiculos/vehiculos-service';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     //añadiendo servicio
-    UsuariosClienteService,
+    PersonaService,
     NoticiasService,
     VehiculosService
   ]
