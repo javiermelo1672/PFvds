@@ -12,6 +12,7 @@ import { Persona } from '../../models/Persona';
 import { Observable } from 'rxjs/Observable';
 import { AlertController } from 'ionic-angular'
 import {IniciarSesiNPage} from '../iniciar-sesi-n/iniciar-sesi-n';
+import { TabsControllerPage } from '../tabs-controller/tabs-controller';
 
 @Component({
   selector: 'page-configuraci-ncliente',
@@ -62,7 +63,9 @@ export class ConfiguraciNClientePage {
 
   goToIniciarSesiN()
   {
-   this.navCtrl.push(IniciarSesiNPage);
+    this.navCtrl.push(IniciarSesiNPage);
+   
+   
   }
   
 }

@@ -1,3 +1,14 @@
 page-iniciar-sesi-n {
+    #page5 {
+		background: -webkit-linear-gradient(#627fdd, #4a80c7,#6099da);
+    }
+    p,
+ion-card-content.card-content {
+text-align: center;
+}
 
+ion-card.card{
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.89);
+}
 }
