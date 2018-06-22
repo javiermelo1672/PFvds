@@ -1,7 +1,9 @@
+import { DateTime } from "ionic-angular/umd";
+
 export interface Persona {
     key?: string;
     Edad: string;
-    Fecha_Registro:Date;
+    Fecha_Registro:string;
     Foto:string;
     Num_Documento:string;
     Num_Licencia:string;

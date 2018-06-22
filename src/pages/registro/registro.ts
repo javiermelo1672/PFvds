@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, DateTime } from 'ionic-angular';
 import { AngularFireAuth } from "angularfire2/auth";
 import { Usuario } from '../../models/Usuario';
 import { Persona } from '../../models/Persona';
@@ -39,12 +39,12 @@ export class RegistroPage {
         //Obtener Fecha del Registro
         let date = new Date();
         
-        userCli.Fecha_Registro=date;
+      
         userCli.Tipo='Cliente';
 
         let sitio = {
          Edad:userCli.Edad,
-         Fecha_Registro:userCli.Fecha_Registro,
+         Fecha_Registro:'Nulll',
          Foto: userCli.Foto,
          Num_Documento:userCli.Num_Documento,
          Num_Licencia: userCli.Num_Licencia,

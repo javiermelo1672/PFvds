@@ -17,12 +17,12 @@ export class IniciarSesiNPage {
   userst= {} as Usuario;
   
   constructor(private alertCtrl: AlertController,private afAuth:AngularFireAuth, public navCtrl: NavController) {
+    
   }
   goToRegistro(params){
     if (!params) params = {};
     this.navCtrl.push(RegistroPage);
   }
-  
   //Pantalla inicial
   goToHola(userst:Usuario){
     try{

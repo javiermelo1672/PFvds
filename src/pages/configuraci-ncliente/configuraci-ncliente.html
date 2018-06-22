@@ -1,17 +1,20 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
       Configuración Cliente
     </ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content padding id="page4">
+    
   <ion-list id="configuraciNCliente-list10">
+      <img src="https://s5.eestatic.com/2017/02/13/motor/coches/Car2Go-Smart-Mercedes_Benz-Coches_193491459_29068435_1024x576.jpg">
     <ion-item *ngFor="let item of usuariosreference$ | async " detail-push navPush="EditarPerfilClientePage"  >
       <ion-avatar>
-        <img style="width: 50px; height: 50px;" src= {{item.Foto}}>
+        <img style="width: 70px; height: 70px;" src= {{item.Foto}}>
       </ion-avatar>
-       <h1>{{item.Nombre}}</h1>  
+       <h1>{{item.Nombre}}</h1> 
+       <p><ion-icon name="settings"></ion-icon>Editar Perfil</p> 
        
     </ion-item>
   </ion-list>
