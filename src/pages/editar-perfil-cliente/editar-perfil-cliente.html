@@ -7,7 +7,7 @@
 <ion-header >
 
   <ion-navbar color="primary">
-    <ion-title>Actualiza tú perfil</ion-title>
+    <ion-title>Actualiza tu perfil</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -23,61 +23,49 @@
         <ion-label>
           Nombre
         </ion-label>
-        <ion-input type="text"  placeholder=""></ion-input>
+        <ion-input type="text" [(ngModel)]='personaobj.Nombre' name="Nombre" placeholder=""  ></ion-input>
       </ion-item>
     <ion-item id="registro-input33">
       <ion-label>
         Edad
       </ion-label>
-      <ion-input type="text"  placeholder=""></ion-input>
+      <ion-input type="text"  [(ngModel)]='personaobj.Edad' name="Edad" placeholder=""></ion-input>
     </ion-item>
       <ion-item id="registro-input4">
         <ion-label>
           Foto
         </ion-label>
-        <ion-input type="text"  placeholder=""></ion-input>
-      </ion-item>
-      <ion-item id="registro-input8">
-        <ion-label>
-          Correo
-        </ion-label>
-        <ion-input type="email" placeholder=""></ion-input>
-      </ion-item>
-      <ion-item id="registro-input5">
-        <ion-label>
-          Contraseña
-        </ion-label>
-        <ion-input type="text"  placeholder=""></ion-input>
+        <ion-input type="text"  [(ngModel)]='personaobj.Foto' name="Foto" placeholder=""></ion-input>
       </ion-item>
       <ion-item id="registro-input6">
         <ion-label>
           #Documento
         </ion-label>
-        <ion-input type="number"  placeholder=""></ion-input>
+        <ion-input type="number"  [(ngModel)]='personaobj.Num_Documento' name="Documento"  placeholder=""></ion-input>
       </ion-item>
       <ion-item id="registro-input7">
         <ion-label>
           #Licencia
         </ion-label>
-        <ion-input type="number"  placeholder=""></ion-input>
+        <ion-input type="number"  [(ngModel)]='personaobj.Num_Licencia' name="Licencia"  placeholder=""></ion-input>
       </ion-item>
       <ion-item id="registro-input9">
         <ion-label>
           Foto Licencia
         </ion-label>
-        <ion-input type="text"  placeholder=""></ion-input>
+        <ion-input type="text"  [(ngModel)]='personaobj.Foto_Licencia' name="Licencias" placeholder=""></ion-input>
       </ion-item>
       <ion-item id="registro-input10">
         <ion-label>
           Foto Documento
         </ion-label>
-        <ion-input type="text"  placeholder=""></ion-input>
+        <ion-input type="text"  [(ngModel)]='personaobj.Foto_documento' name="Foto_documento" placeholder=""></ion-input>
       </ion-item>
       <ion-item id="registro-input16">
         <ion-label>
           Teléfono
         </ion-label>
-        <ion-input type="text" placeholder=""></ion-input>
+        <ion-input type="text"  [(ngModel)]='personaobj.Telefono' name="Teléfono" placeholder=""></ion-input>
       </ion-item>
     </ion-list>
     
@@ -89,7 +77,7 @@
         </strong>
       </p>
     </div>
-    <button id="registro-button4" ion-button color="positive"  (click)="goToInicio(userst,userCli)" block>
+    <button id="registro-button4" ion-button color="positive"  (click)="updatePersona(userst,userCli)" block>
       ACTUALIZAR
     </button>
   </form>

@@ -9,7 +9,7 @@
     
   <ion-list id="configuraciNCliente-list10">
       <img src="https://s5.eestatic.com/2017/02/13/motor/coches/Car2Go-Smart-Mercedes_Benz-Coches_193491459_29068435_1024x576.jpg">
-    <ion-item *ngFor="let item of usuariosreference$ | async " detail-push navPush="EditarPerfilClientePage"  >
+    <ion-item *ngFor="let item of usuariosreference$ | async " detail-push navPush="EditarPerfilClientePage" [navParams]="{item:item}" >
       <ion-avatar>
         <img style="width: 70px; height: 70px;" src= {{item.Foto}}>
       </ion-avatar>

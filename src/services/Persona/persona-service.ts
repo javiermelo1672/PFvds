@@ -28,9 +28,9 @@ export class PersonaService {
        return this.Usuariosespeci;
     }
     
-    editUsuarioItem(item:Persona,id){
+    editUsuarioItem(item:Persona){
 
-        return this.Usuariosref.update(id,item);
+        return this.Usuariosref.update(item.key,item);
 
     }
     removeUsuarioItem(item:Persona){
