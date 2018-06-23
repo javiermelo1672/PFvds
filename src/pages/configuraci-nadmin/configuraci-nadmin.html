@@ -6,15 +6,17 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding id="page13">
+
   <ion-list id="configuraciNAdmin-list17">
-    <ion-item color="none" id="configuraciNAdmin-list-item16">
-      <ion-avatar item-left>
-        <img />
+      <img src="https://s5.eestatic.com/2017/02/13/motor/coches/Car2Go-Smart-Mercedes_Benz-Coches_193491459_29068435_1024x576.jpg">
+    <ion-item *ngFor="let item of usuariosreference$ | async " detail-push navPush="EditarPerfilAdminPage" [navParams]="{item:item}" >
+      <ion-avatar>
+        <img style="width: 70px; height: 70px;" src= {{item.Foto}}>
       </ion-avatar>
-      <h2>
-        Item
-      </h2>
-    </ion-item>
+       <h1>{{item.Nombre}}</h1> 
+       <p><ion-icon name="settings1"></ion-icon>Editar Perfil</p> 
+    
+      </ion-item>
   </ion-list>
   <button id="configuraciNAdmin-button15" ion-button color="positive" block icon-right on-click="goToAAdirCuenta()">
     Agregar Cuenta
@@ -36,7 +38,7 @@
     Ver Usuarios
     <ion-icon name="person"></ion-icon>
   </button>
-  <button id="configuraciNAdmin-button16" ion-button color="assertive" block>
+  <button id="configuraciNAdmin-button16" ion-button color="assertive" block on-click="goToIniciarSesiN()">
     Cerrar Sesión
   </button>
 </ion-content>
