@@ -1,6 +1,6 @@
 <ion-content padding id="page9">
   <h3 id="hola-heading6" style="color:#000000;text-align:center;">
-    ¡Hola de nuevo !
+     ¡Hola de nuevo! 
   </h3>
 
   <ion-list>
@@ -23,25 +23,26 @@
     </h5>
   </div>
   <ion-list id="hola-list4">
-    <ion-item color="none" id="hola-list-item3">
-      Item
+    <ion-item color="none" id="hola-list-item3" style="text-align:center;">
+      No tienes ningún pedido en curso <img  src="assets/Apple/40/1f62d.png">
     </ion-item>
   </ion-list>
-  <div id="hola-markdown6" style="text-align:center;" class="show-list-numbers-and-dots">
+  <div id="hola-markdown6" style="text-align:center;"  class="show-list-numbers-and-dots">
     <h5 style="color:#000000;">
-      Noticias
+      Promociones
     </h5>
   </div>
   <ion-list>
 
-    <ion-item *ngFor="let item of noticiasreference$ | async ">
+    <ion-item *ngFor="let items of noticiasreference$ | async ">
   
      
       
-      <ion-avatar>
-        <img style="width: 100px; height: 100px;" src= {{items.Imagen}}>
-      </ion-avatar>
-       
+      
+        <img  src= {{items.Imagen}}>
+        <h5 style="color:#000000;text-align:center;">{{items.Titulo}}</h5>  
+        <p style="color:#000000;text-align:center;">{{items.Contexto}}</p> 
+        <p style="color:#201e1e;text-align:center;">Ver más</p> 
        
   
       </ion-item>

@@ -36,7 +36,9 @@ export class IniciarSesiNPage {
       });
       
       
-     this.afAuth.auth.signInWithEmailAndPassword(userst.email,userst.password).then(res=> this.navCtrl.push(HolaPage)).catch(reject =>alert.present());
+     
+      this.afAuth.auth.signInWithEmailAndPassword(userst.email,userst.password).then(res=> this.navCtrl.push(HolaPage)).catch(reject =>alert.present());
+     
      
      
     }

@@ -7,7 +7,7 @@ export class VehiculosService {
 
     constructor(private db:AngularFireDatabase){}
 
-    private vehiculosref= this.db.list<Vehiculo>('Vehiculos');
+    private vehiculosref= this.db.list<Vehiculo>('/BasedeDatosF/Empresa/Vehiculo');
 
     getVehiculosList(){
         return this.vehiculosref;

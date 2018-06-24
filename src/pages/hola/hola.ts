@@ -41,16 +41,16 @@ export class HolaPage {
   items: Noticias = {
     Titulo: ' ',
     Imagen: ' ',
-    Contexto:' ',
+    Contexto:' '
   }
 
   ids:string;
   usuariosreference$: Observable <Persona[]>;
   noticiasreference$: Observable <Noticias[]>;
   
-  usariosobj:Persona;
-  Noticiasobj:Noticias;
-  
+  usariosobj= {} as Persona;
+  noticiasobj= {} as Noticias;
+
   displayname:string;
   emails:string;
   // this tells the tabs component which Pages
@@ -68,8 +68,20 @@ export class HolaPage {
     this.ids=this.afAuth.auth.currentUser.uid;
     
     
-    this.noticiasreference$ = this.noticiasser.getNoticiasList().valueChanges();
-    this.usuariosreference$ = this.usuariosser.getSpecificUser(this.ids).valueChanges();
+    this.noticiasreference$ = this.noticiasser.getNoticiasList().snapshotChanges()
+    .map(
+      changes =>{
+        return changes.map(c =>({
+          key: c.payload.key, ... c.payload.val()
+        }));
+      });
+    this.usuariosreference$ = this.usuariosser.getSpecificUser(this.ids).snapshotChanges()
+    .map(
+      changes =>{
+        return changes.map(c =>({
+          key: c.payload.key, ... c.payload.val()
+        }));
+      });
     
   }
 

@@ -5,7 +5,7 @@ import { Noticias} from '../../models/Noticias';
 export class NoticiasService {
 
 
-    private Noticiasref= this.db.list<Noticias>('NoticiasApp'); 
+    private Noticiasref= this.db.list<Noticias>('/BasedeDatosF/Empresa/Promociones'); 
     
 
     constructor(private db: AngularFireDatabase){}
@@ -16,13 +16,13 @@ export class NoticiasService {
     }
 
     
-    editNoticiasItem(item:Noticias,id){
+    editNoticiasItem(items:Noticias,id){
 
-        return this.Noticiasref.update(id,item);
+        return this.Noticiasref.update(id,items);
 
     }
-    removeNoticiasItem(item:Noticias){
+    removeNoticiasItem(items:Noticias){
 
-        return this.Noticiasref.remove(item.key);
+        return this.Noticiasref.remove(items.key);
     }
 }

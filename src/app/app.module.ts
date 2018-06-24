@@ -46,6 +46,7 @@ import {FIREBASE_CONFIG} from './app.firebase.config';
 import{PersonaService} from '../services/Persona/persona-service';
 import{NoticiasService} from '../services/Noticias/noticias-service';
 import {VehiculosService} from '../services/Vehiculos/vehiculos-service';
+import {FactorService} from '../services/Factor/factor-service';
 
 @NgModule({
   declarations: [
@@ -113,7 +114,8 @@ import {VehiculosService} from '../services/Vehiculos/vehiculos-service';
     //añadiendo servicio
     PersonaService,
     NoticiasService,
-    VehiculosService
+    VehiculosService,
+    FactorService
   ]
 })
 export class AppModule {}
