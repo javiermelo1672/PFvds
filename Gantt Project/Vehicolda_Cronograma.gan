@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Vehicolda App" company="X&amp;J Mobility" webLink="http://" view-date="2018-06-20" view-index="0" gantt-divider-location="666" resource-divider-location="300" version="2.8.8" locale="es_CO">
+<?xml version="1.0" encoding="UTF-8"?><project name="Vehicolda App" company="X&amp;J Mobility" webLink="http://" view-date="2018-06-20" view-index="0" gantt-divider-location="532" resource-divider-location="300" version="2.8.8" locale="es">
     <description><![CDATA[Cronograma del Desarrollo de Software de la App Vehicolda
 Javier Duvan Hospital Melo-- Desarrollo y diseño
 Olga Lucia Moyano Orjuela-- Desarrollo y diseño
@@ -8,11 +8,11 @@ Nicolas Meneses Guerrero -- Desarrollo y diseño
 Juan Camilo Sarmiento Reyes -- Desarrollo y diseño
 Anderson Orlando Ramirez Lamprea -- Desarrollo y diseño]]></description>
     <view zooming-state="default:0" id="gantt-chart">
-        <field id="tpd3" name="Nombre" width="374" order="0"/>
-        <field id="tpd4" name="Fecha de inicio" width="85" order="1"/>
-        <field id="tpd5" name="Fecha de fin" width="78" order="2"/>
-        <field id="tpd1" name="Prioridad" width="56" order="3"/>
-        <field id="tpd7" name="Progreso" width="54" order="4"/>
+        <field id="tpd3" name="Nombre" width="282" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="70" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="65" order="2"/>
+        <field id="tpd1" name="Prioridad" width="49" order="3"/>
+        <field id="tpd7" name="Progreso" width="47" order="4"/>
     </view>
     <view id="resource-table">
         <field id="0" name="Nombre" width="210" order="0"/>
