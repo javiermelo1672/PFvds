@@ -1,0 +1,2 @@
+Para abrir el proyecto de OpenProject se necesita Postgres o MySQL
+:v
