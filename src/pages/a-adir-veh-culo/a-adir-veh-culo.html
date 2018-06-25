@@ -8,65 +8,76 @@
 <ion-content padding id="page21">
   <form id="aAdirVehCulo-form11">
     <div id="aAdirVehCulo-markdown16" style="text-align:center;" class="show-list-numbers-and-dots"></div>
-    <ion-item id="aAdirVehCulo-input46">
-      <ion-label>
-        Placa
-      </ion-label>
-      <ion-input type="text" [(ngModel)]='vehiculoobj.Placa' name="Placa" placeholder=""></ion-input>
-    </ion-item>
-    <ion-item id="aAdirVehCulo-input47">
-      <ion-label>
-        Color
-      </ion-label>
-      <ion-input type="text" [(ngModel)]='vehiculoobj.Color' name="Color" placeholder=""></ion-input>
-    </ion-item>
-    <ion-item id="aAdirVehCulo-input48">
-      <ion-label>
-        Modelo
-      </ion-label>
-      <ion-input type="text" [(ngModel)]='vehiculoobj.Modelo' name="Modelo" placeholder=""></ion-input>
-    </ion-item>
-    <ion-item id="aAdirVehCulo-input49">
-      <ion-label>
-        Marca
-      </ion-label>
-      <ion-input type="text" [(ngModel)]='vehiculoobj.Marca' name="Marca" placeholder=""></ion-input>
-    </ion-item>
-    <ion-item id="aAdirVehCulo-input50">
-      <ion-label>
+    
+    <ion-item id="registro-select1">
+      <ion-label >
         Aseguradora
       </ion-label>
-      <ion-input type="text" [(ngModel)]='vehiculoobj.Aseguradora' name="Aseguradora" placeholder=""></ion-input>
-    </ion-item>
-    <ion-item id="aAdirVehCulo-input51">
+      <ion-select  *ngFor="let items of aseguradorareference$ | async " [(ngModel)]='vehiculoobj.Aseguradora' name="Aseguradora" >
+        <ion-option>
+          {{items.Nombre}}
+        </ion-option>
+      </ion-select>
+      </ion-item>
+    <ion-item id="aAdirVehCulo-input47">
       <ion-label>
         Capacidad
       </ion-label>
       <ion-input type="text" [(ngModel)]='vehiculoobj.Capacidad' name="Capacidad" placeholder=""></ion-input>
     </ion-item>
-    <ion-item id="aAdirVehCulo-input52">
+    <ion-item id="aAdirVehCulo-input48">
       <ion-label>
-        Información
+        Color
       </ion-label>
-      <ion-input type="text" [(ngModel)]='vehiculoobj.Informacion' name="Informacion" placeholder=""></ion-input>
+      <ion-input type="text" [(ngModel)]='vehiculoobj.Color' name="Color" placeholder=""></ion-input>
     </ion-item>
-    <ion-item id="aAdirVehCulo-input53">
+    <ion-item id="aAdirVehCulo-input49">
+      <ion-label>
+        Estado
+      </ion-label>
+      <ion-input type="text" [(ngModel)]='vehiculoobj.Estado' name="Estado" placeholder=""></ion-input>
+    </ion-item>
+    <ion-item id="aAdirVehCulo-input50">
+      <ion-label>
+        Factor de Renta
+      </ion-label>
+      <ion-input type="text" [(ngModel)]='vehiculoobj.Factor_de_Renta' name="Factor_de_Renta" placeholder=""></ion-input>
+    </ion-item>
+    <ion-item id="aAdirVehCulo-input51">
       <ion-label>
         Foto
       </ion-label>
       <ion-input type="text" [(ngModel)]='vehiculoobj.Foto' name="Foto" placeholder=""></ion-input>
     </ion-item>
+    <ion-item id="aAdirVehCulo-input52">
+      <ion-label>
+        Gama del Vehiculo
+      </ion-label>
+      <ion-input type="text" [(ngModel)]='vehiculoobj.Gama_Vehiculo' name="Gama_Vehiculo" placeholder=""></ion-input>
+    </ion-item>
+    <ion-item id="aAdirVehCulo-input53">
+      <ion-label>
+        Información
+      </ion-label>
+      <ion-input type="text" [(ngModel)]='vehiculoobj.Informacion' name="Informacion" placeholder=""></ion-input>
+    </ion-item>
     <ion-item id="aAdirVehCulo-input54">
       <ion-label>
-        Observaciones
+        Marca
       </ion-label>
-      <ion-input type="text" [(ngModel)]='vehiculoobj.Observaciones' name="Observaciones"  placeholder=""></ion-input>
+      <ion-input type="text" [(ngModel)]='vehiculoobj.Marca' name="Marca"  placeholder=""></ion-input>
     </ion-item>
     <ion-item id="aAdirVehCulo-input55">
       <ion-label>
-        Gasolina
+       Modelo
       </ion-label>
-      <ion-input type="text" [(ngModel)]='vehiculoobj.Gasolina' name="Gasolina" placeholder=""></ion-input>
+      <ion-input type="text" [(ngModel)]='vehiculoobj.Modelo' name="Modelo" placeholder=""></ion-input>
+    </ion-item>
+    <ion-item id="aAdirVehCulo-input56">
+      <ion-label>
+       Placa
+      </ion-label>
+      <ion-input type="text" [(ngModel)]='vehiculoobj.Placa' name="Placa" placeholder=""></ion-input>
     </ion-item>
   </form>
   <button id="aAdirVehCulo-button26" ion-button color="positive" block on-click="addVehiculo(vehiculoobj)" block>
@@ -81,16 +92,17 @@
       
      
       
-      <img style="width: 200px; height: 200px;" src= {{item.Foto}}>
+      <img item-start style="display:block;width:50%;" src= {{item.Foto}}>
       
        <h3>{{item.Aseguradora}}</h3>  
        <h3>{{item.Capacidad}}</h3> 
        <h3>{{item.Color}}</h3>
-       <h3>{{item.Gasolina}}</h3>
+       <h3>{{item.Estado}}</h3>
+       <h3>{{item.Factor_de_Renta}}</h3>
+       <h3>{{item.Gama_Vehiculo}}</h3>
        <h3>{{item.Informacion}}</h3>
        <h3>{{item.Marca}}</h3>
        <h3>{{item.Modelo}}</h3>
-       <h3>{{item.Observaciones}}</h3>
        <h3>{{item.Placa}}</h3>
        
        

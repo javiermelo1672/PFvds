@@ -3,12 +3,13 @@ export interface Vehiculo {
     Aseguradora: string;
     Capacidad: string;
     Color: string;
+    Estado: string;
+    Factor_de_Renta:string;
     Foto: string;
-    Gasolina: string;
+    Gama_Vehiculo: string;
     Informacion: string;
     Marca: string;
-    Modelo: string;
-    Observaciones: string; 
+    Modelo: string; 
     Placa: string;
     
 }

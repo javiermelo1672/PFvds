@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 //añadiendo servicio y modelo
 import {VehiculosService} from '../../services/Vehiculos/vehiculos-service';
+import {AseguradoraService} from '../../services/Aseguradora/aseguradora-service';
 import {Vehiculo} from '../../models/Vehiculos';
+import {Aseguradora} from  '../../models/Aseguradora';
 //añadiendo algunas dependencias de angularfire2,alert..
 // añadiendo otras dependencias
 import {Observable} from 'rxjs/Observable';
@@ -23,19 +25,28 @@ export class AAdirVehCuloPage {
     Aseguradora: '',
     Capacidad: '',
     Color: '',
+    Estado: '',
+    Factor_de_Renta: '',
     Foto: '',
-    Gasolina: '',
+    Gama_Vehiculo: '',
     Informacion: '',
     Marca: '',
     Modelo: '',
-    Observaciones: '',
     Placa: ''
   } 
+
+  items: Aseguradora= {
+    Codigo:'',
+    Fecha_Inicio:'',
+    Fecha_Vencimiento:'',
+    Nombre:''
+   
+  } 
   vehiculosreference$:Observable <Vehiculo[]>;
-  
+  aseguradorareference$:Observable <Aseguradora[]>;
   vehiculoobj={} as Vehiculo;
-  
-  constructor(public navCtrl: NavController, private databases:AngularFireDatabase, private vehiculosser:VehiculosService, private alertCtrl:AlertController) {
+ 
+  constructor(public navCtrl: NavController, private databases:AngularFireDatabase, private vehiculosser:VehiculosService,private aseguradoraser:AseguradoraService, private alertCtrl:AlertController) {
   
     this.vehiculosreference$= this.vehiculosser.getVehiculosList().snapshotChanges().map(
       changes =>{
@@ -43,6 +54,14 @@ export class AAdirVehCuloPage {
           key: c.payload.key, ... c.payload.val()
         }));
       });
+
+      this.aseguradorareference$=this.aseguradoraser.getAseguradoraItem().snapshotChanges().map(
+        changes =>{
+          return changes.map(c =>({
+            key: c.payload.key, ... c.payload.val()
+          }));
+        });
+        
   }
 
   addVehiculo(item:Vehiculo)

@@ -46,7 +46,7 @@ import{PersonaService} from '../services/Persona/persona-service';
 import{NoticiasService} from '../services/Noticias/noticias-service';
 import {VehiculosService} from '../services/Vehiculos/vehiculos-service';
 import {FactorService} from '../services/Factor/factor-service';
-
+import {AseguradoraService} from '../services/Aseguradora/aseguradora-service';
 @NgModule({
   declarations: [
     MyApp,
@@ -112,7 +112,8 @@ import {FactorService} from '../services/Factor/factor-service';
     PersonaService,
     NoticiasService,
     VehiculosService,
-    FactorService
+    FactorService,
+    AseguradoraService
   ]
 })
 export class AppModule {}
