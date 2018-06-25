@@ -28,9 +28,13 @@ export class PersonaService {
        return this.Usuariosespeci;
     }
     
-    editUsuarioItem(item:Persona){
+    editUsuarioItem(item:Persona,id){
 
-        return this.Usuariosref.update(item.key,item);
+        return this.Usuariosref.update(id,item);
+
+    }
+    removevaluekey()
+    {
 
     }
     removeUsuarioItem(item:Persona){

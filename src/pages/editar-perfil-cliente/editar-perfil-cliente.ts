@@ -4,7 +4,8 @@ import { AngularFireDatabase,AngularFireList} from 'angularfire2/database';
 import{PersonaService} from '../../services/Persona/persona-service';
 import { Persona } from '../../models/Persona';
 import {AlertController} from 'ionic-angular';
-import{ConfiguraciNClientePage}  from '../configuraci-ncliente/configuraci-ncliente'
+import{ConfiguraciNClientePage}  from '../configuraci-ncliente/configuraci-ncliente';
+import { AngularFireAuth } from "angularfire2/auth";
 // aqui se importa la clase import {} from '../editar-perfil-cliente/editar-perfil-cliente';
 /**
  * Generated class for the EditarPerfilClientePage page.
@@ -21,7 +22,9 @@ import{ConfiguraciNClientePage}  from '../configuraci-ncliente/configuraci-nclie
 export class EditarPerfilClientePage {
   personaobj:Persona;
   //aqui va el objeto del cliente
-  constructor(public navCtrl: NavController, public navParams: NavParams, private personaser:PersonaService,private alertCtrl:AlertController) {
+  ids:string;
+  displayname:string;
+  constructor(private afAuth: AngularFireAuth,public navCtrl: NavController, public navParams: NavParams, private personaser:PersonaService,private alertCtrl:AlertController) {
 
   }
 
@@ -34,32 +37,24 @@ export class EditarPerfilClientePage {
   updatePersona(personaobj:Persona)
   {
 
-
-    try{
-      this.personaser.editUsuarioItem(personaobj).then(()=> {
-
-        let alert = this.alertCtrl.create({
-          title: 'CORRECTO',
-          subTitle: 'El Item ha sido ELIMINADO',
-          buttons: ['Aceptar']
-      
-          
-        });
-        alert.present();
-        this.navCtrl.push(ConfiguraciNClientePage);
-      });
-    }
-    catch(e)
-    {
-      let alert = this.alertCtrl.create({
-        title: 'ERROR',
-        subTitle: 'El Item NO ha sido ELIMINADO',
-        buttons: ['Aceptar']
     
-        
+      this.afAuth.authState.subscribe(user => {
+        if (!user) {
+          this.displayname = null;        
+          return;
+        }       
       });
-      alert.present();
-    }
+      this.ids=this.afAuth.auth.currentUser.uid;
+      
+      this.personaser.editUsuarioItem(personaobj,this.ids).then(()=> {
+         this.navCtrl.push(ConfiguraciNClientePage);
+      });
+   
+    
+    
+
+
+    
     
   }
 

@@ -17,7 +17,6 @@ import {TabsAdminControllerPage } from '../pages/tabs-admin-controller/tabs-admi
 import { IniciarSesiNPage } from '../pages/iniciar-sesi-n/iniciar-sesi-n';
 import { RegistroPage } from '../pages/registro/registro';
 import { RegistroAdminPage } from '../pages/registro-admin/registro-admin';
-import { EditarPerfilAdminPage } from '../pages/editar-perfil-admin/editar-perfil-admin';
 import { UPSNecesitasPermisosPage } from '../pages/upsnecesitas-permisos/upsnecesitas-permisos';
 import { HolaAdminPage } from '../pages/hola-admin/hola-admin';
 import { AAdirTarjetasPage } from '../pages/a-adir-tarjetas/a-adir-tarjetas';
@@ -62,7 +61,6 @@ import {FactorService} from '../services/Factor/factor-service';
     IniciarSesiNPage,
     RegistroPage,
     RegistroAdminPage,
-    EditarPerfilAdminPage,
     UPSNecesitasPermisosPage,
     HolaPage,
     HolaAdminPage,
@@ -96,7 +94,6 @@ import {FactorService} from '../services/Factor/factor-service';
     IniciarSesiNPage,
     RegistroPage,
     RegistroAdminPage,
-    EditarPerfilAdminPage,
     UPSNecesitasPermisosPage,
     HolaPage,
     HolaAdminPage,
