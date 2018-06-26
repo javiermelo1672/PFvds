@@ -71,6 +71,21 @@ Brindar una alternativa a los ciudadanos y extranjeros la posibilidad de solicit
 * Despliegue en servidor en la nube.
 * Capacitación al personal pertinente  de la aplicación.
 
+##Definición de Modulos(En construcción)
+
+##Cliente
+* Modulo Persona
+* Modulo Tarjetas
+* Modulo Pedidos
+* Modulo Vehiculos
+* Modulo de servicios
+##Admin
+* Modulo Persona
+* Modulo Tarjetas
+* Modulo Pedidos
+* Modulo Ganancias
+* Modulo Empresa
+* Modulo de Servicios
 
 ## Autores
 * **Javier Duvan Hospital Melo**-- *Desarrollo y diseño*
