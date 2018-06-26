@@ -99,6 +99,8 @@ Brindar una alternativa a los ciudadanos y extranjeros la posibilidad de solicit
 
 ## ESTRUCTURA DEL PROYECTO
 ![ESTRUCTURA](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FOrganizaci%C3%B3n.jpg?alt=media&token=49d38f83-e470-4805-882c-c2baf1ffce05)
+## DIAGRAMA DE FLUJO DE RIESGOS
+![ESTRUCTURA](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FDiagrama%20de%20Flujo.png?alt=media&token=324bb968-668a-4426-8809-1076429c7706)
 
 ## Autores
 * **Javier Duvan Hospital Melo**-- *Desarrollo y diseño*
