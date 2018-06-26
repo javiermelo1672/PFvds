@@ -13,8 +13,8 @@
       <ion-label >
         Aseguradora
       </ion-label>
-      <ion-select  *ngFor="let items of aseguradorareference$ | async " [(ngModel)]='vehiculoobj.Aseguradora' name="Aseguradora" >
-        <ion-option>
+      <ion-select   [(ngModel)]='vehiculoobj.Aseguradora' name="Aseguradora" >
+        <ion-option *ngFor="let items of aseguradorareference$ | async ">
           {{items.Nombre}}
         </ion-option>
       </ion-select>
