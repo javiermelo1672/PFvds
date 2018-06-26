@@ -1,42 +1,48 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Editar Perfil Admin
+      Editar Administrador
     </ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content padding id="page15">
   <form id="editarPerfilAdmin-form7">
     <h4 id="editarPerfilAdmin-heading17" style="color:#000000;font-weight:400;text-align:center;">
-      ¡Estás a un paso de ser parte de nuestra gran familia!
+      ¡Aquí puedes editar tu perfil!
     </h4>
     <ion-list id="editarPerfilAdmin-list19">
       <ion-item id="editarPerfilAdmin-input31">
         <ion-label>
           Nombre
         </ion-label>
-        <ion-input type="text" placeholder=""></ion-input>
+        <ion-input type="text" [(ngModel)]='personasobj.Nombre' name='Nombre' placeholder=""></ion-input>
       </ion-item>
+      <ion-item id="editarPerfilAdmin-input21">
+          <ion-label>
+            Edad
+          </ion-label>
+          <ion-input type="number" [(ngModel)]='personasobj.Edad' name='Edad' placeholder=""></ion-input>
+        </ion-item>
       <ion-item id="editarPerfilAdmin-input32">
         <ion-label>
           Foto
         </ion-label>
-        <ion-input type="text" placeholder=""></ion-input>
+        <ion-input type="text" [(ngModel)]='personasobj.Foto' name='Foto' placeholder=""></ion-input>
       </ion-item>
     </ion-list>
     <ion-item id="editarPerfilAdmin-input35">
       <ion-label>
         #Documento
       </ion-label>
-      <ion-input type="number" placeholder=""></ion-input>
+      <ion-input type="number" [(ngModel)]='personasobj.Documento'name='Documento' placeholder=""></ion-input>
     </ion-item>
     <ion-item id="editarPerfilAdmin-input36">
       <ion-label>
         Foto Documento
       </ion-label>
-      <ion-input type="text" placeholder=""></ion-input>
+      <ion-input type="text"[(ngModel)]='personasobj.Foto' name='FotoDocumento' placeholder=""></ion-input>
     </ion-item>
-    <ion-item id="editarPerfilAdmin-select2">
+    <ion-item id="editarPerfilAdmin-select2" >
       <ion-label>
         Tipo
       </ion-label>
@@ -53,21 +59,21 @@
       <ion-label>
         Teléfono
       </ion-label>
-      <ion-input type="number" placeholder=""></ion-input>
+      <ion-input type="number" [(ngModel)]='personasobj.Telefono' name='Telefono' placeholder=""></ion-input>
     </ion-item>
     <ion-item id="editarPerfilAdmin-input37">
       <ion-label>
         Clave de Admin
       </ion-label>
-      <ion-input type="text" placeholder=""></ion-input>
+      <ion-input type="text"  placeholder=""></ion-input>
     </ion-item>
     <div id="editarPerfilAdmin-markdown10" style="text-align:center;" class="show-list-numbers-and-dots">
       <p style="color:#000000;">
-        Para lograr actualizar tús datos es necsario que contactes al administrador
+        Para lograr actualizar tús datos es necesario que contactes con el administrador
       </p>
     </div>
-    <button id="editarPerfilAdmin-button22" ion-button color="positive" block>
-      Actualizar Admin
+    <button id="editarPerfilAdmin-button22" ion-button color="positive" (click) ="updatePersona(personasobj)" block>
+      Actualizar Perfil
     </button>
   </form>
 </ion-content>

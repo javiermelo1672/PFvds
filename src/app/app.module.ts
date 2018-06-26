@@ -8,12 +8,10 @@ import { HistorialPage } from '../pages/historial/historial';
 import { PanelDeHistorialPage } from '../pages/panel-de-historial/panel-de-historial';
 import { ConfiguraciNClientePage } from '../pages/configuraci-ncliente/configuraci-ncliente';
 import { ConfiguraciNAdminPage } from '../pages/configuraci-nadmin/configuraci-nadmin';
-//Hola
 //Se añaden tabs(vistas) para cada uno de los tipos de usuario
 import { TabsControllerPage } from '../pages/tabs-controller/tabs-controller';
 import {TabsAdminControllerPage } from '../pages/tabs-admin-controller/tabs-admin-controller';
-
-
+import {VerusuariosPage} from '../pages/verusuarios/verusuarios';
 import { IniciarSesiNPage } from '../pages/iniciar-sesi-n/iniciar-sesi-n';
 import { RegistroPage } from '../pages/registro/registro';
 import { RegistroAdminPage } from '../pages/registro-admin/registro-admin';
@@ -69,7 +67,8 @@ import {AseguradoraService} from '../services/Aseguradora/aseguradora-service';
     AAdirAseguradoraPage,
     AAdirVehCuloPage,
     CarrosPage,
-    CarrosAdminPage
+    CarrosAdminPage,
+    VerusuariosPage
   ],
   imports: [
     BrowserModule,
@@ -102,7 +101,8 @@ import {AseguradoraService} from '../services/Aseguradora/aseguradora-service';
     AAdirAseguradoraPage,
     AAdirVehCuloPage,
     CarrosPage,
-    CarrosAdminPage
+    CarrosAdminPage,
+    VerusuariosPage
   ],
   providers: [
     StatusBar,

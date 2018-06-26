@@ -10,6 +10,7 @@ import { Persona } from '../../models/Persona';
 import { AlertController } from 'ionic-angular'
 import { AngularFireDatabase,AngularFireList} from 'angularfire2/database';
 import { AngularFireAuth } from "angularfire2/auth";
+import { VerusuariosPage } from '../verusuarios/verusuarios';
 @Component({
   selector: 'page-configuraci-nadmin',
   templateUrl: 'configuraci-nadmin.html'
@@ -68,4 +69,7 @@ export class ConfiguraciNAdminPage {
     this.navCtrl.push(IniciarSesiNPage);
    
   }
+   goToVerusuarios(){
+     this.navCtrl.push(VerusuariosPage);
+   }
 }
