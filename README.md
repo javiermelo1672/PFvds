@@ -71,15 +71,15 @@ Brindar una alternativa a los ciudadanos y extranjeros la posibilidad de solicit
 * Despliegue en servidor en la nube.
 * Capacitación al personal pertinente  de la aplicación.
 
-##Definición de Modulos(En construcción)
+## Definición de Modulos(En construcción)
 
-##Cliente
+## Cliente
 * Modulo Persona
 * Modulo Tarjetas
 * Modulo Pedidos
 * Modulo Vehiculos
 * Modulo de servicios
-##Admin
+## Admin
 * Modulo Persona
 * Modulo Tarjetas
 * Modulo Pedidos
