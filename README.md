@@ -1,3 +1,5 @@
+![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2Fggg.png?alt=media&token=9f37dbb2-bdb2-4e52-b63d-7757dc94f79d)
+
 # VEHICOLDA APP
 
 Este es un proyecto para implementar una aplicación con Ionic para pedir Vehículos.
