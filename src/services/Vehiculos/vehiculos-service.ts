@@ -8,14 +8,9 @@ export class VehiculosService {
     constructor(private db:AngularFireDatabase){}
 
     private vehiculosref= this.db.list<Vehiculo>('/BasedeDatosF/Empresa/Vehiculo');
-    private vehiculosrefespecific;
+
     getVehiculosList(){
         return this.vehiculosref;
-    }
-
-    getSpecificVehiculo(gama)
-    {
-        return this.vehiculosrefespecific= this.db.list<Vehiculo>('/BasedeDatosF/Empresa/Vehiculo', ref=> ref.orderByChild('Gama_Vehiculo').equalTo(gama));
     }
     
     addVehiculosItem(item:Vehiculo)
