@@ -9,16 +9,17 @@
   </h4>
   <ion-list>
 
-    <ion-item *ngFor="let item of  Factorreference$ | async " >
+    <ion-item *ngFor="let item of  Factorreference$ | async " detail-push navPush="MostrarcategoriavehiculoPage"  
+    [navParams]="{item:item}" >
   
      
       
      
       
-      <img item-end style="width: 160px; height: 160px;" src= {{item.Foto}}>
+      <img item-start style="width: 160px; height: 160px;" src= {{item.Foto}}>
       
-       <h1 style="white-space: pre-line;">{{item.Nombre}}</h1>  
-       <h2 style="white-space: pre-line;">{{item.Contexto}}</h2> 
+       <h2 style="white-space: pre-line;">{{item.Nombre}}</h2>  
+       <h3 style="white-space: pre-line;">{{item.Contexto}}</h3> 
       
        
        
