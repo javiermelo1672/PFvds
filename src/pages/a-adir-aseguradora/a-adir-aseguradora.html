@@ -1,37 +1,41 @@
+
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Añadir Aseguradora
+      Registro Aseguradora
     </ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content padding id="page20">
-  <form id="aAdirAseguradora-form10">
-    <div id="aAdirAseguradora-markdown15" style="text-align:center;" class="show-list-numbers-and-dots"></div>
-    <ion-item id="aAdirAseguradora-input44">
+  <form id="reg_aseg">
+    <div id="forma" style="text-align:center;" class="show-list-numbers-and-dots"></div>
+    <ion-item id="itemRegAsegNit">
       <ion-label>
-        Número
+        Nit
       </ion-label>
       <ion-input type="number" placeholder=""></ion-input>
     </ion-item>
-    <ion-item id="aAdirAseguradora-input45">
+    <ion-item id="itemRegAsegNom">
       <ion-label>
-        Nombre
+        Razón Social
       </ion-label>
       <ion-input type="text" placeholder=""></ion-input>
     </ion-item>
-  </form>
-  <button id="aAdirAseguradora-button25" ion-button color="positive" block>
-    Añadir
-  </button>
-  <ion-list id="aAdirAseguradora-list24">
-    <ion-item color="none" id="aAdirAseguradora-list-item21">
-      <ion-avatar item-left>
-        <img />
-      </ion-avatar>
-      <h2>
-        Item
-      </h2>
+    <ion-item id="itemRegAsegFInicio">
+      <ion-label>
+        Fecha Inicio 
+      </ion-label>
+      <ion-input type="date" placeholder=""></ion-input>
     </ion-item>
-  </ion-list>
-</ion-content>
+    <ion-item id="itemRegAsegF_fin">
+      <ion-label>
+        Fecha Fin
+      </ion-label>
+      <ion-input type="date" placeholder=""></ion-input>
+    </ion-item>
+  </form>
+  <button id="aAdirVehCulo-button26" ion-button 
+  color="positive" block on-click="addAseguradora(Aseguradoraobj)" block>
+    Registrar
+  
+  </ion-content>
