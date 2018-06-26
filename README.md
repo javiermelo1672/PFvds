@@ -87,6 +87,17 @@ Brindar una alternativa a los ciudadanos y extranjeros la posibilidad de solicit
 * Modulo Empresa
 * Modulo de Servicios
 
+## EDT
+
+![EDT](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FWES.jpg?alt=media&token=a9463e1c-c7d0-47fc-918a-bdd315503645)
+
+## RBS
+
+![RBS](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FRBS%20Gesti%C3%B3n%20de%20riesgos.jpg?alt=media&token=58fb6639-d7da-48a0-be09-db1a66667a4e)
+
+## ESTRUCTURA DEL PROYECTO
+![ESTRUCTURA](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FOrganizaci%C3%B3n.jpg?alt=media&token=49d38f83-e470-4805-882c-c2baf1ffce05)
+
 ## Autores
 * **Javier Duvan Hospital Melo**-- *Desarrollo y diseño*
 * **Olga Lucia Moyano Orjuela**-- *Desarrollo y diseño*
