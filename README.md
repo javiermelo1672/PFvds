@@ -52,10 +52,9 @@ Brindar una alternativa a los ciudadanos y extranjeros la posibilidad de solicit
 ## Lista de Tareas
 
 * Revisión del estado actual del proceso de renta de la empresa.
+* Establecer requerimientos del proyecto.
 * Generar esquema de trabajo.
 * Definir tecnologías a implementar. 
-* Establecer requerimientos del proyecto.
-* Análisis de requerimientos para la plataforma.
 * Determinar alcance del proyecto.
 * Estimación de tiempo de entrega. 
 * Firma del contrato.
