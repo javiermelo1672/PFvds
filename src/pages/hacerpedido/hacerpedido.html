@@ -1,0 +1,72 @@
+<!--
+  Generated template for the HacerpedidoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Hacer tú pedido</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding id="Hacerpedido">
+    <h3 id="panelInicial-heading11" style="color:#000000;font-weight:400;text-align:center;">
+        ¡Qué buena Elección!
+      </h3>
+      <h4 id="panelInicial-heading11" style="color:#000000;font-weight:400;text-align:center;">
+          Ahora es tiempo de reservar:
+        </h4>
+    <ion-card *ngFor="let item of vehiculossreference$  | async " >
+
+        <img  style="display:block;" src= {{item.Foto}}  >
+        <ion-card-content>
+         
+              <h1>{{item.Marca}}</h1>
+            
+            <h2>{{item.Modelo}}</h2>
+            <h2>{{item.Gama_Vehiculo}}</h2>
+        </ion-card-content>
+      </ion-card>
+
+
+      <ion-card>
+
+          
+          <ion-card-content>
+
+            <ion-card-title>
+              <h2>Selecciona el tiempo del alquiler del Vehículo</h2>
+            </ion-card-title>
+
+              <ion-item>
+                  <ion-label >Fecha de Inicio:</ion-label>
+                  <ion-datetime [(ngModel)]='vehiculoobj.Fecha_Inicio' displayFormat="MMM DD YYYY" ></ion-datetime>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Fecha de Fin:</ion-label>
+                    <ion-datetime [(ngModel)]='vehiculoobj.Fecha_Final' displayFormat="MMM DD YYYY " ></ion-datetime>
+                  </ion-item>
+                  <ion-item>
+                      <h2>Total</h2>
+            
+                      <h1>150.000</h1>
+                  </ion-item>
+
+                  <button id="configuraciNAdmin-button17" ion-button color="secondary" block icon-right on-click="goToAAdirAseguradora()">
+                     Confirmar Pedido
+                
+                    </button>
+                    <h5>Al hacer tu pedido aceptas las políticas de privacidad de Vehicolda</h5>
+                  
+
+
+          </ion-card-content>
+        </ion-card>
+      
+
+
+</ion-content>

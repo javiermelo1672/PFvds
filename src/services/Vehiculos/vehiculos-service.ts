@@ -21,6 +21,10 @@ export class VehiculosService {
         {
             return this.vehiculosrefespecific= this.db.list<Vehiculo>('/BasedeDatosF/Empresa/Vehiculo', ref=> ref.orderByChild('Gama_Vehiculo').equalTo(gama));
         }
+        getSpecificTYPEVehiculo(key)
+        {
+            return this.vehiculosrefespecific= this.db.list<Vehiculo>('/BasedeDatosF/Empresa/Vehiculo', ref=> ref.orderByKey().equalTo(key));
+        }
     updateVehiculosItem(item:Vehiculo)
     {
         return this.vehiculosref.update(item.key,item);

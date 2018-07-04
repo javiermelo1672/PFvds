@@ -31,6 +31,7 @@ import {AngularFireAuthModule} from "angularfire2/auth";
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -45,6 +46,10 @@ import{NoticiasService} from '../services/Noticias/noticias-service';
 import {VehiculosService} from '../services/Vehiculos/vehiculos-service';
 import {FactorService} from '../services/Factor/factor-service';
 import {AseguradoraService} from '../services/Aseguradora/aseguradora-service';
+import {PedidosService} from '../services/Pedidos/pedidos-service';
+
+//Importando porveedores
+import { Network } from '@ionic-native/network';
 @NgModule({
   declarations: [
     MyApp,
@@ -77,7 +82,7 @@ import {AseguradoraService} from '../services/Aseguradora/aseguradora-service';
     AngularFireModule.initializeApp(FIREBASE_CONFIG),
     //Añadiendo los rest api de auth y realtimedatabase
     AngularFireAuthModule,
-    AngularFireDatabaseModule,
+    AngularFireDatabaseModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -107,13 +112,15 @@ import {AseguradoraService} from '../services/Aseguradora/aseguradora-service';
   providers: [
     StatusBar,
     SplashScreen,
+    Network,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     //añadiendo servicio
     PersonaService,
     NoticiasService,
     VehiculosService,
     FactorService,
-    AseguradoraService
+    AseguradoraService,
+    PedidosService
   ]
 })
 export class AppModule {}

@@ -8,6 +8,9 @@ import { AngularFireAuth } from "angularfire2/auth";
 import { Usuario } from '../../models/Usuario';
 import { AlertController } from 'ionic-angular';
 import {Persona} from '../../models/Persona';
+import { LoadingController } from 'ionic-angular';
+import { Network } from '@ionic-native/network';
+import { ToastController } from 'ionic-angular';
 @Component({
   selector: 'page-iniciar-sesi-n',
   templateUrl: 'iniciar-sesi-n.html'
@@ -16,8 +19,18 @@ export class IniciarSesiNPage {
   ids:string;
   userst= {} as Usuario;
   
-  constructor(private alertCtrl: AlertController,private afAuth:AngularFireAuth, public navCtrl: NavController) {
-    
+  constructor(public toastCtrl: ToastController,private network: Network,private alertCtrl: AlertController,private afAuth:AngularFireAuth, public navCtrl: NavController,public loadingCtrl: LoadingController) {
+    let disconnectSubscription = this.network.onDisconnect().subscribe(() => {
+      this.presentToast();
+    });
+    disconnectSubscription.unsubscribe();
+  }
+  presentToast() {
+    const toast = this.toastCtrl.create({
+      message: 'Revisa tu conexión Porfavor',
+      duration: 3000
+    });
+    toast.present();
   }
   goToRegistro(params){
     if (!params) params = {};
@@ -34,12 +47,21 @@ export class IniciarSesiNPage {
 
         
       });
+
+      const loader = this.loadingCtrl.create({
+        content: "Iniciando Sesión"
+      });
       
       
-     
-      this.afAuth.auth.signInWithEmailAndPassword(userst.email,userst.password).then(res=> this.navCtrl.push(HolaPage)).catch(reject =>alert.present());
-     
-     
+
+      loader.present().then(() => {
+        this.afAuth.auth.signInWithEmailAndPassword(userst.email,userst.password)
+        .then(res=> this.navCtrl.push(HolaPage))
+        .catch(reject =>alert.present());
+          
+        loader.dismiss();
+      });
+      
      
     }
     catch(e){

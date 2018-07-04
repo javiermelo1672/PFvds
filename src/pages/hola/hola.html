@@ -17,6 +17,8 @@
       
     
   </ion-list>
+
+ 
   <div id="hola-markdown5" style="text-align:center;" class="show-list-numbers-and-dots">
     <h5 style="color:#000000;">
       Aquí hay alguna información de tu intéres
@@ -32,22 +34,19 @@
       Promociones
     </h5>
   </div>
-  <ion-list>
+  
 
-    <ion-item *ngFor="let items of noticiasreference$ | async ">
-  
-     
-      
-      
-        <img  src= {{items.Imagen}}>
-        <h5 style="color:#000000;text-align:center;">{{items.Titulo}}</h5>  
-        <p style="color:#000000;text-align:center;">{{items.Contexto}}</p> 
-        <p style="color:#201e1e;text-align:center;">Ver más</p> 
-       
-  
-      </ion-item>
-    
-  </ion-list>
+
+  <ion-card *ngFor="let items of noticiasreference$ | async " >
+
+    <img src= {{items.Imagen}}>
+    <ion-card-content>
+      <ion-card-title>
+        <h2 style="color:#000000;text-align:center;">{{items.Titulo}}</h2>
+        </ion-card-title>
+
+    </ion-card-content>
+  </ion-card>
   <p>Esta sección de aquí para bajo es meramente para facilitar las pruebas de la implementación de los modulos, cuando se termine
     las pruebas los dos botones de abajo se quitaran
   </p>

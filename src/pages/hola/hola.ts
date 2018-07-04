@@ -19,6 +19,7 @@ import{NoticiasService} from '../../services/Noticias/noticias-service';
 
 import { TabsControllerPage } from '../tabs-controller/tabs-controller';
 import {TabsAdminControllerPage } from '../tabs-admin-controller/tabs-admin-controller';
+import { LoadingController } from 'ionic-angular';
 @Component({
   selector: 'page-hola',
   templateUrl: 'hola.html'
@@ -55,7 +56,7 @@ export class HolaPage {
   emails:string;
   // this tells the tabs component which Pages
   // should be each tab's root Page
-  constructor(private alertCtrl: AlertController,private afAuth: AngularFireAuth,public navCtrl: NavController,private databases:AngularFireDatabase,private usuariosser: PersonaService,private noticiasser: NoticiasService) {
+  constructor(public loadingCtrl: LoadingController,private alertCtrl: AlertController,private afAuth: AngularFireAuth,public navCtrl: NavController,private databases:AngularFireDatabase,private usuariosser: PersonaService,private noticiasser: NoticiasService) {
     afAuth.authState.subscribe(user => {
       if (!user) {
         this.displayname = null;        
@@ -66,9 +67,12 @@ export class HolaPage {
           
     });
     this.ids=this.afAuth.auth.currentUser.uid;
-    
-    
-    this.noticiasreference$ = this.noticiasser.getNoticiasList().snapshotChanges()
+    const loader = this.loadingCtrl.create({
+      content: "Cargando Contenido"
+    });
+
+    loader.present().then(() => {
+      this.noticiasreference$ = this.noticiasser.getNoticiasList().snapshotChanges()
     .map(
       changes =>{
         return changes.map(c =>({
@@ -82,6 +86,10 @@ export class HolaPage {
           key: c.payload.key, ... c.payload.val()
         }));
       });
+        
+      loader.dismiss();
+    });
+    
     
   }
 
