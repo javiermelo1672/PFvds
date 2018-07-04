@@ -14,7 +14,7 @@ export class PedidosService {
 
     constructor(private db: AngularFireDatabase){}
     
-    addFactorItem(item:Pedido)
+    addPedido(item:Pedido)
      {
          return this.Pedidoref.push(item);
      }

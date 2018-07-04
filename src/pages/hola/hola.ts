@@ -18,7 +18,7 @@ import{NoticiasService} from '../../services/Noticias/noticias-service';
 
 
 import { TabsControllerPage } from '../tabs-controller/tabs-controller';
-import {TabsAdminControllerPage } from '../tabs-admin-controller/tabs-admin-controller';
+
 import { LoadingController } from 'ionic-angular';
 @Component({
   selector: 'page-hola',
@@ -66,6 +66,7 @@ export class HolaPage {
       this.emails=user.email;
           
     });
+    
     this.ids=this.afAuth.auth.currentUser.uid;
     const loader = this.loadingCtrl.create({
       content: "Cargando Contenido"
@@ -96,7 +97,5 @@ export class HolaPage {
   gotoVistaCliente(){
     this.navCtrl.push(TabsControllerPage);
   }
-  gotoVistaAdmin(){
-    this.navCtrl.push(TabsAdminControllerPage);
-  }
+  
 }

@@ -5,12 +5,7 @@ import {VehiculosService} from '../../services/Vehiculos/vehiculos-service';
 import {Observable} from 'rxjs/Observable';
 import {PedidosService} from '../../services/Pedidos/pedidos-service';
 import {Pedido} from '../../models/Pedido';
-/**
- * Generated class for the HacerpedidoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import {AlertController} from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -18,12 +13,22 @@ import {Pedido} from '../../models/Pedido';
   templateUrl: 'hacerpedido.html',
 })
 export class HacerpedidoPage {
-  
+  item: Pedido= {
+    Usuario_Solicitud: '',
+    Usuario_Aprobo: '',
+    Estado: '',
+    Fecha_Inicio: '',
+    Fecha_Final: '',
+    Vehiculo: '',
+    Codigo_checkout: '',
+    estado_pago: '',
+    Valor_pagado: ''
+  }
   pedidoobj={} as Pedido;
   keys:string;
   vehiculoobj:Vehiculo;
   vehiculossreference$:Observable <Vehiculo[]>;
-  constructor(public navCtrl: NavController, public navParams: NavParams,private vehiculosser:VehiculosService) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,private vehiculosser:VehiculosService, public pedidoser:PedidosService,private alertCtrl:AlertController) {
     this.vehiculoobj=this.navParams.get('item');
     this.keys=this.vehiculoobj.key;
     console.log(this.keys);
@@ -35,8 +40,36 @@ export class HacerpedidoPage {
         }));
       });
 
+
+
+
   }
 
-  
+
+  AddPedidoSolicitud(item:Pedido)
+  {
+    
+    try{
+      item.Estado='0';
+      item.estado_pago='sin pagar';
+      item.
+this.pedidoser.addPedido(item).then(ref=>{
+  console.log(ref.key);
+});
+let alert = this.alertCtrl.create({
+title: 'CORECTO',
+subTitle: 'Correcto tu pedido ha sido creado',
+buttons: ['Aceptar']
+
+
+});
+alert.present();
+  }
+  catch(e)
+  {
+
+  }
 
 }
+}
+

@@ -8,14 +8,11 @@ import { AngularFireAuth } from "angularfire2/auth";
 import { Usuario } from '../../models/Usuario';
 import { AlertController } from 'ionic-angular';
 import {Persona} from '../../models/Persona';
-<<<<<<< HEAD
 import { LoadingController } from 'ionic-angular';
 import { Network } from '@ionic-native/network';
 import { ToastController } from 'ionic-angular';
-=======
 import {PersonaService} from '../../services/Persona/persona-service';
-
->>>>>>> 9610bb508341be8f60c1c7384feec85f2cbe605c
+import { HolaAdminPage } from '../../pages/hola-admin/hola-admin';
 @Component({
   selector: 'page-iniciar-sesi-n',
   templateUrl: 'iniciar-sesi-n.html'
@@ -24,8 +21,7 @@ export class IniciarSesiNPage {
   ids:string;
   userst= {} as Usuario;
   
-<<<<<<< HEAD
-  constructor(public toastCtrl: ToastController,private network: Network,private alertCtrl: AlertController,private afAuth:AngularFireAuth, public navCtrl: NavController,public loadingCtrl: LoadingController) {
+  constructor(public toastCtrl: ToastController,private network: Network,public personaService: PersonaService,private alertCtrl: AlertController,private afAuth:AngularFireAuth, public navCtrl: NavController,public loadingCtrl: LoadingController) {
     let disconnectSubscription = this.network.onDisconnect().subscribe(() => {
       this.presentToast();
     });
@@ -37,10 +33,6 @@ export class IniciarSesiNPage {
       duration: 3000
     });
     toast.present();
-=======
-  constructor(private alertCtrl: AlertController,private afAuth:AngularFireAuth, public personaService: PersonaService, public navCtrl: NavController) {
-    
->>>>>>> 9610bb508341be8f60c1c7384feec85f2cbe605c
   }
   goToRegistro(params){
     if (!params) params = {};
@@ -59,8 +51,6 @@ export class IniciarSesiNPage {
 
         
       });
-
-<<<<<<< HEAD
       const loader = this.loadingCtrl.create({
         content: "Iniciando Sesión"
       });
@@ -68,15 +58,7 @@ export class IniciarSesiNPage {
       
 
       loader.present().then(() => {
-        this.afAuth.auth.signInWithEmailAndPassword(userst.email,userst.password)
-        .then(res=> this.navCtrl.push(HolaPage))
-        .catch(reject =>alert.present());
-          
-        loader.dismiss();
-      });
-      
-=======
-      var that = this;
+     var that = this;
       this.afAuth.auth.signInWithEmailAndPassword(userst.email,userst.password).then(
         function(firebaseUser) {
           var persona = that.personaService.getSpecificUser(firebaseUser.user.uid).valueChanges();
@@ -85,16 +67,23 @@ export class IniciarSesiNPage {
               if (user[0].Tipo == "Cliente") { 
                 console.log("un cliente ha iniciado sesión...");
                 that.navCtrl.push(HolaPage);
+                loader.dismiss();
               } else {
                 console.log("es admin")
+                that.navCtrl.push(HolaAdminPage);
+                loader.dismiss();
               }
             });
         }
       ).catch(
         reject =>alert.present()
       ); 
->>>>>>> 9610bb508341be8f60c1c7384feec85f2cbe605c
-     
+      loader.dismiss();
+    });
+
+
+
+
     }
     catch(e){
      console.log("error:", e);
