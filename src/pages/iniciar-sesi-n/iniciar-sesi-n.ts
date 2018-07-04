@@ -8,6 +8,8 @@ import { AngularFireAuth } from "angularfire2/auth";
 import { Usuario } from '../../models/Usuario';
 import { AlertController } from 'ionic-angular';
 import {Persona} from '../../models/Persona';
+import {PersonaService} from '../../services/Persona/persona-service';
+
 @Component({
   selector: 'page-iniciar-sesi-n',
   templateUrl: 'iniciar-sesi-n.html'
@@ -16,7 +18,7 @@ export class IniciarSesiNPage {
   ids:string;
   userst= {} as Usuario;
   
-  constructor(private alertCtrl: AlertController,private afAuth:AngularFireAuth, public navCtrl: NavController) {
+  constructor(private alertCtrl: AlertController,private afAuth:AngularFireAuth, public personaService: PersonaService, public navCtrl: NavController) {
     
   }
   goToRegistro(params){
@@ -25,6 +27,8 @@ export class IniciarSesiNPage {
   }
   //Pantalla inicial
   goToHola(userst:Usuario){
+
+
     try{
 
       let alert = this.alertCtrl.create({
@@ -34,15 +38,28 @@ export class IniciarSesiNPage {
 
         
       });
-      
-      
-     
-      this.afAuth.auth.signInWithEmailAndPassword(userst.email,userst.password).then(res=> this.navCtrl.push(HolaPage)).catch(reject =>alert.present());
-     
-     
+
+      var that = this;
+      this.afAuth.auth.signInWithEmailAndPassword(userst.email,userst.password).then(
+        function(firebaseUser) {
+          var persona = that.personaService.getSpecificUser(firebaseUser.user.uid).valueChanges();
+            persona.subscribe(user => {
+              console.log("user: ", user[0]);
+              if (user[0].Tipo == "Cliente") { 
+                console.log("un cliente ha iniciado sesión...");
+                that.navCtrl.push(HolaPage);
+              } else {
+                console.log("es admin")
+              }
+            });
+        }
+      ).catch(
+        reject =>alert.present()
+      ); 
      
     }
     catch(e){
+     console.log("error:", e);
      
     }
   }
