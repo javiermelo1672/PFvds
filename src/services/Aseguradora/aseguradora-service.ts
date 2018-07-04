@@ -15,4 +15,9 @@ export class AseguradoraService {
         return this.Aseguradoraref;
       }
 
+      addAseguradoraItem(item:Aseguradora)
+      {
+          return this.Aseguradoraref.push(item);
+      }
+
 }

@@ -1,4 +1,4 @@
-![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2Fggg.png?alt=media&token=9f37dbb2-bdb2-4e52-b63d-7757dc94f79d)
+![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2Fportada.png?alt=media&token=f0640bee-39a6-4062-8320-3b8298d2db31)
 
 # VEHICOLDA APP
 
@@ -52,10 +52,9 @@ Brindar una alternativa a los ciudadanos y extranjeros la posibilidad de solicit
 ## Lista de Tareas
 
 * Revisión del estado actual del proceso de renta de la empresa.
+* Establecer requerimientos del proyecto.
 * Generar esquema de trabajo.
 * Definir tecnologías a implementar. 
-* Establecer requerimientos del proyecto.
-* Análisis de requerimientos para la plataforma.
 * Determinar alcance del proyecto.
 * Estimación de tiempo de entrega. 
 * Firma del contrato.
@@ -88,7 +87,8 @@ Brindar una alternativa a los ciudadanos y extranjeros la posibilidad de solicit
 * Modulo Ganancias
 * Modulo Empresa
 * Modulo de Servicios
-
+## CRONOGRAMA
+![EDT](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FCronograna.PNG?alt=media&token=5e2a4686-c1bf-4163-9e44-0005b3f94b9f)
 ## EDT
 
 ![EDT](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FWES.jpg?alt=media&token=a9463e1c-c7d0-47fc-918a-bdd315503645)
@@ -101,6 +101,15 @@ Brindar una alternativa a los ciudadanos y extranjeros la posibilidad de solicit
 ![ESTRUCTURA](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FOrganizaci%C3%B3n.jpg?alt=media&token=49d38f83-e470-4805-882c-c2baf1ffce05)
 ## DIAGRAMA DE FLUJO DE RIESGOS
 ![ESTRUCTURA](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FDiagrama%20de%20Flujo.png?alt=media&token=324bb968-668a-4426-8809-1076429c7706)
+
+## ESTIMACIONES DE RIESGOS
+
+![ESTRUCTURA](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FmATRIZ%201.PNG?alt=media&token=47393a6a-ae16-44ee-9657-3a3130e9cfd1)
+![ESTRUCTURA](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FmATRIZ%202.PNG?alt=media&token=fcdead07-c423-4b0f-8a62-c32ec9dffbd9)
+![ESTRUCTURA](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FmATRIZ%203.PNG?alt=media&token=090eea48-1f2c-48e1-b6e1-c1bf535fb596)
+<p align="center">
+  <img  src="https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FtAREAS.PNG?alt=media&token=2a225af0-507d-425c-b571-7572c975958a">
+</p>
 
 ## Autores
 * **Javier Duvan Hospital Melo**-- *Desarrollo y diseño*

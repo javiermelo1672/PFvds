@@ -5,35 +5,39 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding id="page20">
-  <form id="reg_aseg">
-    <div id="forma" style="text-align:center;" class="show-list-numbers-and-dots"></div>
-    <ion-item id="itemRegAsegNit">
-      <ion-label>
-        Nit
-      </ion-label>
-      <ion-input type="number" placeholder=""></ion-input>
-    </ion-item>
-    <ion-item id="itemRegAsegNom">
-      <ion-label>
-        Razón Social
-      </ion-label>
-      <ion-input type="text" placeholder=""></ion-input>
-    </ion-item>
-    <ion-item id="itemRegAsegFInicio">
-      <ion-label>
-        Fecha Inicio 
-      </ion-label>
-      <ion-input type="date" placeholder=""></ion-input>
-    </ion-item>
-    <ion-item id="itemRegAsegF_fin">
-      <ion-label>
-        Fecha Fin
-      </ion-label>
-      <ion-input type="date" placeholder=""></ion-input>
-    </ion-item>
-  </form>
-  <button id="aAdirVehCulo-button26" ion-button color="positive" block on-click="addAseguradora(Aseguradoraobj)" block>
+<ion-content padding id="page21">
+  <form id="aAdirAseg-form11">
+    <div id="aAdirAseg-markdown16" style="text-align:center;" class="show-list-numbers-and-dots"></div>
+     <ion-item>   
+    <ion-label>
+      Nit
+    </ion-label>
+    <ion-input type="text" [(ngModel)]='aseguradoraobj.Codigo' name="Codigo" placeholder=""></ion-input>
+  </ion-item>
+
+  <ion-item id="aAdirAseg-input48">
+    <ion-label>
+      Fecha Inicio
+    </ion-label>
+    <ion-input type="date" [(ngModel)]='aseguradoraobj.Fecha_Inicio' name="Fecha_Inicio" placeholder=""></ion-input>
+  </ion-item>
+
+  <ion-item id="aAdirAseg-input49">
+    <ion-label>
+      Fecha Vencimiento
+    </ion-label>
+    <ion-input type="date" [(ngModel)]='aseguradoraobj.Fecha_Vencimiento' name="Fecha_Vencimiento" placeholder=""></ion-input>
+  </ion-item>
+
+  <ion-item id="aAdirAseg-input50">
+    <ion-label>
+      Razón Social
+    </ion-label>
+    <ion-input type="text" [(ngModel)]='aseguradoraobj.Nombre' name="Nombre" placeholder=""></ion-input>
+  </ion-item>
+       </form>
+  <button id="aAdirAseg-button26" ion-button color="positive" block on-click=" addAseguradora(aseguradoraobj)" block>
     Registrar
-    </button>
-  </ion-content>
+  </button>
+   
+</ion-content>

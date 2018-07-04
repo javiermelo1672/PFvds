@@ -24,7 +24,6 @@ export class PersonaService {
 
     getSpecificUser(id){
        this.Usuariosespeci= this.db.list<Persona>('BasedeDatosF/Empresa/Persona/',ref => ref.orderByKey().equalTo(id));
-       
        return this.Usuariosespeci;
     }
     
