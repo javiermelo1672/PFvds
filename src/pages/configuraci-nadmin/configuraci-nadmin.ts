@@ -11,6 +11,8 @@ import { AlertController } from 'ionic-angular'
 import { AngularFireDatabase,AngularFireList} from 'angularfire2/database';
 import { AngularFireAuth } from "angularfire2/auth";
 import { VerusuariosPage } from '../verusuarios/verusuarios';
+import { RegistroAdminPage } from '../registro-admin/registro-admin';
+import { AgregarEmpleadoPage } from '../agregar-empleado/agregar-empleado';
 @Component({
   selector: 'page-configuraci-nadmin',
   templateUrl: 'configuraci-nadmin.html'
@@ -71,5 +73,11 @@ export class ConfiguraciNAdminPage {
   }
    goToVerusuarios(){
      this.navCtrl.push(VerusuariosPage);
+   }
+   goToRegistroAdmin(){
+     this.navCtrl.push(RegistroAdminPage)
+   }
+   goToAgregarEmpleado(){
+     this.navCtrl.push(AgregarEmpleadoPage)
    }
 }

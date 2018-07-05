@@ -18,7 +18,7 @@ import{NoticiasService} from '../../services/Noticias/noticias-service';
 
 
 import { TabsControllerPage } from '../tabs-controller/tabs-controller';
-
+import { TabsAdminControllerPage} from '../tabs-admin-controller/tabs-admin-controller';
 import { LoadingController } from 'ionic-angular';
 @Component({
   selector: 'page-hola',
@@ -96,6 +96,10 @@ export class HolaPage {
 
   gotoVistaCliente(){
     this.navCtrl.push(TabsControllerPage);
+  }
+
+  gotoVistaAdmin(){
+    this.navCtrl.push(TabsAdminControllerPage);
   }
   
 }

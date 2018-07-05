@@ -42,30 +42,12 @@
       </ion-label>
       <ion-input type="number" placeholder=""></ion-input>
     </ion-item>
-    <ion-item id="registroAdmin-input18">
-      <ion-label>
-        Foto Documento
-      </ion-label>
-      <ion-input type="text" placeholder=""></ion-input>
-    </ion-item>
+    
     <ion-item id="registroAdmin-input20">
       <ion-label>
         Telefono
       </ion-label>
       <ion-input type="number" placeholder=""></ion-input>
-    </ion-item>
-    <ion-item id="registroAdmin-select1">
-      <ion-label>
-        Tipo
-      </ion-label>
-      <ion-select name="">
-        <ion-option>
-          Empleado
-        </ion-option>
-        <ion-option>
-          Admin
-        </ion-option>
-      </ion-select>
     </ion-item>
     <div id="registroAdmin-markdown2" style="text-align:center;" class="show-list-numbers-and-dots">
       <p style="color:#000000;">
@@ -76,7 +58,7 @@
         para la sección Admin de la app
       </p>
     </div>
-    <button id="registroAdmin-button5" ion-button color="positive" block>
+    <button id="registroAdmin-button5" ion-button color="positive" (click)="goToInicio(usersts,userAdm)" block >
       ¡Regístrate!
     </button>
   </form>

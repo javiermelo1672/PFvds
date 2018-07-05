@@ -52,7 +52,6 @@ export class HacerpedidoPage {
     try{
       item.Estado='0';
       item.estado_pago='sin pagar';
-      item.
 this.pedidoser.addPedido(item).then(ref=>{
   console.log(ref.key);
 });

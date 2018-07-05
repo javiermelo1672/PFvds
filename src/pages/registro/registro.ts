@@ -26,10 +26,6 @@ export class RegistroPage {
 
   {
 
-    
-     
-    
-    
       try{
 
         const result=await this.afAuth.auth.createUserWithEmailAndPassword(userst.email,userst.password);
@@ -65,10 +61,7 @@ export class RegistroPage {
       });
         
        this.navCtrl.push(TabsControllerPage);
-       
-
       
-     
        }
        catch(e){
         let alert = this.alertCtrl.create({
