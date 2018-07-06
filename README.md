@@ -88,7 +88,10 @@ Brindar una alternativa a los ciudadanos y extranjeros la posibilidad de solicit
 * Modulo Empresa
 * Modulo de Servicios
 ## CRONOGRAMA
-![EDT](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FCronograna.PNG?alt=media&token=5e2a4686-c1bf-4163-9e44-0005b3f94b9f)
+![EDT](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2F1.png?alt=media&token=8abe0ac7-9c41-4540-99db-906f6f4754b3)
+![EDT](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2F2.png?alt=media&token=93500f42-16b2-40f3-b5f5-1e331d91b7c1)
+![EDT](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2F3.png?alt=media&token=28860620-e94d-44ef-947d-7ec7ef8bb99a)
+![EDT](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2F4.png?alt=media&token=42d59b59-9f1e-4252-9754-9118c2677de2)
 ## EDT
 
 ![EDT](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FWES.jpg?alt=media&token=a9463e1c-c7d0-47fc-918a-bdd315503645)
