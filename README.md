@@ -102,6 +102,9 @@ Brindar una alternativa a los ciudadanos y extranjeros la posibilidad de solicit
 ## DIAGRAMA DE FLUJO DE RIESGOS
 ![ESTRUCTURA](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FDiagrama%20de%20Flujo.png?alt=media&token=324bb968-668a-4426-8809-1076429c7706)
 
+## BPMN 2.0
+![ESTRUCTURA](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FmATRIZ%203.PNG?alt=media&token=090eea48-1f2c-48e1-b6e1-c1bf535fb596)
+
 ## ESTIMACIONES DE RIESGOS
 
 ![ESTRUCTURA](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FmATRIZ%201.PNG?alt=media&token=47393a6a-ae16-44ee-9657-3a3130e9cfd1)
@@ -110,6 +113,8 @@ Brindar una alternativa a los ciudadanos y extranjeros la posibilidad de solicit
 <p align="center">
   <img  src="https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FtAREAS.PNG?alt=media&token=2a225af0-507d-425c-b571-7572c975958a">
 </p>
+
+
 
 ## Autores
 * **Javier Duvan Hospital Melo**-- *Desarrollo y diseño*
