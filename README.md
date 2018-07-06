@@ -113,10 +113,10 @@ Brindar una alternativa a los ciudadanos y extranjeros la posibilidad de solicit
 ![ESTRUCTURA](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FmATRIZ%201.PNG?alt=media&token=47393a6a-ae16-44ee-9657-3a3130e9cfd1)
 ![ESTRUCTURA](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FmATRIZ%202.PNG?alt=media&token=fcdead07-c423-4b0f-8a62-c32ec9dffbd9)
 ![ESTRUCTURA](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FmATRIZ%203.PNG?alt=media&token=090eea48-1f2c-48e1-b6e1-c1bf535fb596)
-<p align="center">
-  <img  src="https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FtAREAS.PNG?alt=media&token=2a225af0-507d-425c-b571-7572c975958a">
-</p>
+![ESTRUCTURA](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FtAREAS.PNG?alt=media&token=2a225af0-507d-425c-b571-7572c975958a)
 
+## PLAN DE CALIDAD
+[Plan de SQA PDF](https://github.com/javiermelo1672/PFvds/blob/master/Gantt%20Project/Plan%20de%20Aseguramiento%20de%20Calidad.pdf)
 
 
 ## Autores
