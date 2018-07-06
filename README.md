@@ -103,7 +103,7 @@ Brindar una alternativa a los ciudadanos y extranjeros la posibilidad de solicit
 ![ESTRUCTURA](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FDiagrama%20de%20Flujo.png?alt=media&token=324bb968-668a-4426-8809-1076429c7706)
 
 ## BPMN 2.0
-![ESTRUCTURA](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FBPMN%202.0.png?alt=media&token=d1c34da1-ebc1-41da-9a43-2a5094a9ccdd)
+![ESTRUCTURA](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FgPreview.png?alt=media&token=55374dc8-7162-499f-b765-7f5f5a3f5f6b)
 
 ## ESTIMACIONES DE RIESGOS
 
