@@ -28,11 +28,13 @@ export class HacerpedidoPage {
   keys:string;
   vehiculoobj:Vehiculo;
   vehiculossreference$:Observable <Vehiculo[]>;
+  valorstring:string;
+  valorint:any;
   constructor(public navCtrl: NavController, public navParams: NavParams,private vehiculosser:VehiculosService, public pedidoser:PedidosService,private alertCtrl:AlertController) {
     this.vehiculoobj=this.navParams.get('item');
     this.keys=this.vehiculoobj.key;
     console.log(this.keys);
-
+     
     this.vehiculossreference$= this.vehiculosser.getSpecificTYPEVehiculo(this.keys).snapshotChanges().map(
       changes =>{
         return changes.map(c =>({
@@ -40,6 +42,12 @@ export class HacerpedidoPage {
         }));
       });
 
+      this.valorstring=this.vehiculoobj.Factor_de_Renta.toString();
+      this.valorint= parseInt(this.valorstring);
+      this.valorint=(this.valorint*100000)+3500+100000;
+      this.vehiculoobj.Factor_de_Renta=this.valorint.toString();
+      
+       
 
 
 
@@ -52,6 +60,7 @@ export class HacerpedidoPage {
     try{
       item.Estado='0';
       item.estado_pago='sin pagar';
+      item.Vehiculo=this.vehiculoobj.key;
 this.pedidoser.addPedido(item).then(ref=>{
   console.log(ref.key);
 });

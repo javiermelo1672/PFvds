@@ -4,6 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HolaPage } from '../pages/hola/hola';
 import { PanelInicialPage } from '../pages/panel-inicial/panel-inicial';
+import {PanelinicialadminPage} from '../pages/panelinicialadmin/panelinicialadmin';
 import { HistorialPage } from '../pages/historial/historial';
 import { PanelDeHistorialPage } from '../pages/panel-de-historial/panel-de-historial';
 import { ConfiguraciNClientePage } from '../pages/configuraci-ncliente/configuraci-ncliente';
@@ -55,6 +56,7 @@ import { Network } from '@ionic-native/network';
     MyApp,
     HolaPage,
     PanelInicialPage,
+    PanelinicialadminPage,
     HistorialPage,
     PanelDeHistorialPage,
     ConfiguraciNClientePage,
@@ -89,6 +91,7 @@ import { Network } from '@ionic-native/network';
     MyApp,
     HolaPage,
     PanelInicialPage,
+    PanelinicialadminPage,
     HistorialPage,
     PanelDeHistorialPage,
     ConfiguraciNClientePage,

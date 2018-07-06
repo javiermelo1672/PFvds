@@ -6,8 +6,8 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Hacer tú pedido</ion-title>
+  <ion-navbar color="primary" >
+    <img src="assets/imgs/dana.png" style="display:block;width:22%;height:auto;margin-left:auto;margin-right:auto;" />
   </ion-navbar>
 
 </ion-header>
@@ -52,8 +52,10 @@
                   </ion-item>
                   <ion-item>
                       <h2>Total</h2>
-            
-                      <h1>150.000</h1>
+                     <ion-item >
+                      <h1>{{this.vehiculoobj.Fecha_Final}}</h1>
+                     </ion-item>
+                      
                   </ion-item>
 
                   <button id="configuraciNAdmin-button17" ion-button color="secondary" block icon-right on-click="goToAAdirAseguradora()">
