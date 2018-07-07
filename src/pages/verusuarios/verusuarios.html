@@ -7,17 +7,23 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>USUARIOS</ion-title>
+    <ion-title>Usuarios</ion-title>
   </ion-navbar>
-  <h1>AQUI VA LA LISTA DE USUARIOS</h1>
+  
 </ion-header>
-<form id="usuarios">
-    <ion-list id="lista-usuarios">
-    
-  </ion-list>
-
-</form>
 
 <ion-content padding>
+    <h3>A continuación podrás ver los usuarios de tu empresa que estan registrados</h3>
 
+    <ion-list *ngFor="let item of usuariosreference$ | async ">
+<ion-item>
+    <ion-avatar>
+        <img style="width: 100px; height: 100px;" src= {{item.Foto}}>
+    </ion-avatar>
+      
+      <h2 style="color:#000000;text-align:center;">{{item.Nombre}}</h2>
+      <h3 style="color:#000000;text-align:center;">Telefono: {{item.Telefono}}</h3>
+</ion-item>
+     
+    </ion-list>
 </ion-content>

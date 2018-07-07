@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Persona } from '../../models/Persona';
 import {AngularFireAuth} from "angularfire2/auth";
 import{PersonaService}  from '../../services/Persona/persona-service';
 import {AlertController} from 'ionic-angular';
-
+import {Persona } from '../../models/PersonaEmpresa';
+import { Observable } from 'rxjs/Observable';
 /**
  * Generated class for the VerusuariosPage page.
  *
@@ -19,10 +19,27 @@ import {AlertController} from 'ionic-angular';
 })
 export class VerusuariosPage {
   usuariosobj:Persona;
-  ids:string;
-  displayname:string;
-
+  item: Persona = {
+    Edad:' ',
+    Fecha_Registro:'',
+    Foto: ' ',
+    Num_Documento:' ',
+    Foto_documento:' ',
+    Telefono: ' ',
+    Nombre: ' ',
+    Tipo: ' ',
+    
+  }
+  usuariosreference$: Observable <Persona[]>;
   constructor(private afAuth: AngularFireAuth,public navCtrl: NavController, public navParams: NavParams, private personaser:PersonaService,private alertCtrl:AlertController) {
+    this.usuariosreference$ = this.personaser.getSpecificUsers('Administrador').snapshotChanges()
+    .map(
+      changes =>{
+        return changes.map(c =>({
+          key: c.payload.key, ... c.payload.val()
+        }));
+      });
+  
   }
 
   ionViewWillLoad() {

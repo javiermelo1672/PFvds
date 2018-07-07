@@ -26,6 +26,10 @@ export class PersonaService {
        this.Usuariosespeci= this.db.list<Persona>('BasedeDatosF/Empresa/Persona/',ref => ref.orderByKey().equalTo(id));
        return this.Usuariosespeci;
     }
+    getSpecificUsers(parametro){
+        this.Usuariosespeci= this.db.list<Persona>('BasedeDatosF/Empresa/Persona/',ref => ref.orderByChild('Tipo').equalTo(parametro));
+        return this.Usuariosespeci;
+     }
     
     editUsuarioItem(item:Persona,id){
 

@@ -8,47 +8,73 @@
 <ion-content padding id="page7">
   <form id="registroAdmin-form3">
     <h4 id="registroAdmin-heading4" style="color:#000000;font-weight:400;text-align:center;">
-      ¡Estás a un paso de ser parte de nuestra gran familia!
+      ¡Estas apunto de añadir un nuevo usuario a tu plantilla!
     </h4>
     <ion-list id="registroAdmin-list3">
       <ion-item id="registroAdmin-input11">
         <ion-label>
           Nombre
         </ion-label>
-        <ion-input type="text" placeholder=""></ion-input>
+        <ion-input type="text" [(ngModel)]='userAdm.Nombre' name= "Nombre" placeholder=""></ion-input>
       </ion-item>
       <ion-item id="registroAdmin-input12">
         <ion-label>
           Foto
         </ion-label>
-        <ion-input type="text" placeholder=""></ion-input>
+        <ion-input type="text" [(ngModel)]='userAdm.Foto' name= "Foto"placeholder=""></ion-input>
       </ion-item>
       <ion-item id="registroAdmin-input13">
         <ion-label>
           Correo Corporativo
         </ion-label>
-        <ion-input type="email" placeholder=""></ion-input>
+        <ion-input type="email" [(ngModel)]='usersts.email' name= "Correo" placeholder=""></ion-input>
       </ion-item>
       <ion-item id="registroAdmin-input14">
         <ion-label>
           Contraseña
         </ion-label>
-        <ion-input type="text" placeholder=""></ion-input>
+        <ion-input type="text" [(ngModel)]='usersts.password' name= "Contrasena" placeholder=""></ion-input>
       </ion-item>
     </ion-list>
     <ion-item id="registroAdmin-input15">
       <ion-label>
         #Documento
       </ion-label>
-      <ion-input type="number" placeholder=""></ion-input>
+      <ion-input type="text" [(ngModel)]='userAdm.Num_Documento' name= "Num_Documento" placeholder=""></ion-input>
     </ion-item>
-    
+    <ion-item id="registroAdmin-input24">
+      <ion-label>
+        Foto del Documento
+      </ion-label>
+      <ion-input type="text" [(ngModel)]='userAdm.Foto_Documento' name= "Foto_Documento" placeholder=""></ion-input>
+    </ion-item>
     <ion-item id="registroAdmin-input20">
       <ion-label>
         Telefono
       </ion-label>
-      <ion-input type="number" placeholder=""></ion-input>
+      <ion-input type="number" [(ngModel)]='userAdm.Telefono' name= "Telefono" placeholder=""></ion-input>
     </ion-item>
+
+    <ion-item id="registroAdmin-input23">
+      <ion-label>
+        Edad
+      </ion-label>
+      <ion-input type="number" [(ngModel)]='userAdm.Edad' name= "Edad" placeholder=""></ion-input>
+    </ion-item>
+    <ion-item id="registro-select1">
+      <ion-label >
+       Tipo
+      </ion-label>
+      <ion-select  [(ngModel)]='userAdm.Tipo' name="Tipo" >
+        <ion-option>
+          Administrador
+        </ion-option>
+        <ion-option>
+          Empleado
+        </ion-option>
+      </ion-select>
+      </ion-item>
+
     <div id="registroAdmin-markdown2" style="text-align:center;" class="show-list-numbers-and-dots">
       <p style="color:#000000;">
         Al hacer click en registrar aceptas todos los términos legales y de privacidad de
@@ -59,7 +85,7 @@
       </p>
     </div>
     <button id="registroAdmin-button5" ion-button color="positive" (click)="goToInicio(usersts,userAdm)" block >
-      ¡Regístrate!
+      Registro
     </button>
   </form>
 </ion-content>

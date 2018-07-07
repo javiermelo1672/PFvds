@@ -4,11 +4,9 @@ export interface Persona {
     Edad: string;
     Fecha_Registro:string;
     Foto:string;
-    Num_Documento:string;
-    Num_Licencia:string;
-    Foto_Licencia:string;
     Foto_documento:string;
-    Telefono:string;
     Nombre:string;
+    Num_Documento:string;
+    Telefono:string;
     Tipo:string;
 }

@@ -69,7 +69,7 @@ export class IniciarSesiNPage {
                 that.navCtrl.push(HolaPage);
                 loader.dismiss();
               } else {
-                console.log("es admin")
+                console.log("es admin o cliente")
                 that.navCtrl.push(HolaAdminPage);
                 loader.dismiss();
               }

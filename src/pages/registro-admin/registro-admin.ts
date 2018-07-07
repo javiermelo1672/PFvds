@@ -6,7 +6,7 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import{PersonaService} from '../../services/Persona/persona-service';
 import { Usuario } from '../../models/Usuario';
 import { Persona } from '../../models/Persona';
-import { TabsControllerPage } from '../tabs-controller/tabs-controller';
+import {TabsAdminControllerPage } from '../tabs-admin-controller/tabs-admin-controller';
 
 @Component({
   selector: 'page-registro-admin',
@@ -20,6 +20,7 @@ export class RegistroAdminPage {
   userAdm={} as Persona;
   constructor(public navCtrl: NavController,private alertCtrl: AlertController,private databases:AngularFireDatabase, private afAuth: AngularFireAuth,private usuariosser: PersonaService) {
   }
+
   async goToInicio(usersts:Usuario,userAdm:Persona)
   
   {
@@ -38,6 +39,7 @@ export class RegistroAdminPage {
        Edad:userAdm.Edad,
        Fecha_Registro:'Nulll',
        Foto: userAdm.Foto,
+       Foto_Documento: 'Nulll',
        Num_Documento:userAdm.Num_Documento,
        Telefono:userAdm.Telefono,
        Nombre: userAdm.Nombre,
@@ -53,7 +55,7 @@ export class RegistroAdminPage {
       buttons: ['Aceptar']
     });
       
-     this.navCtrl.push(TabsControllerPage);
+     this.navCtrl.push(TabsAdminControllerPage);
     
      }
      catch(e){
