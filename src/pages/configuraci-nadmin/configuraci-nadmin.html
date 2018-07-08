@@ -1,14 +1,14 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="dark" >
     <ion-title>
-      Configuración Admin
+      Configuración 
     </ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content padding id="page13">
 
   <ion-list id="configuraciNAdmin-list17">
-      <img src="https://s5.eestatic.com/2017/02/13/motor/coches/Car2Go-Smart-Mercedes_Benz-Coches_193491459_29068435_1024x576.jpg">
+      <img src="https://www.abc.es/media/motor/2016/02/11/1-alquiler--620x349.jpg">
     <ion-item *ngFor="let item of usuariosreference$ | async " detail-push navPush="EditarPerfilAdminPage" [navParams]="{item:item}" >
       <ion-avatar>
         <img style="width: 70px; height: 70px;" src= {{item.Foto}}>
@@ -18,31 +18,31 @@
     
       </ion-item>
   </ion-list>
-  <button id="configuraciNAdmin-button15" ion-button color="positive" block icon-right on-click="goToAAdirCuenta()">
+  <button id="configuraciNAdmin-button15" ion-button color="dark" block icon-right on-click="goToAAdirCuenta()">
     Agregar Cuenta
     <ion-icon name="cash"></ion-icon>
   </button>
-  <button id="configuraciNAdmin-button17" ion-button color="positive" block icon-right on-click="goToAAdirAseguradora()">
+  <button id="configuraciNAdmin-button17" ion-button color="dark" block icon-right on-click="goToAAdirAseguradora()">
     Agregar Aseguradora
     <ion-icon name="lock"></ion-icon>
   </button>
-  <button id="configuraciNAdmin-button18" ion-button color="positive" block icon-right on-click="goToAAdirVehCulo()">
+  <button id="configuraciNAdmin-button18" ion-button color="dark" block icon-right on-click="goToAAdirVehCulo()">
     Agregar Vehículos
     <ion-icon name="car"></ion-icon>
   </button>
-  <button id="configuraciNAdmin-button19" ion-button color="positive" block icon-right>
+  <button id="configuraciNAdmin-button19" ion-button color="dark" block icon-right>
     Editar Info Empresa
     <ion-icon name="clipboard"></ion-icon>
   </button>
-  <button id="configuraciNAdmin-button20" ion-button color="positive" block icon-right on-click = "goToVerusuarios()">
+  <button id="configuraciNAdmin-button20" ion-button color="dark" block icon-right on-click = "goToVerusuarios()">
     Ver Usuarios
     <ion-icon name="person"></ion-icon>
   </button>
-  <button id="configuraciNAdmin-button22" ion-button color="positive" block icon-right on-click="goToRegistroAdmin()">
+  <button id="configuraciNAdmin-button22" ion-button color="dark" block icon-right on-click="goToRegistroAdmin()">
     Añadir Usuario Corporativo
     <ion-icon name="person"></ion-icon>
   </button>
-  <button id="configuraciNAdmin-button23" ion-button color="positive" block on-click="goToIniciarSesiN()">
+  <button id="configuraciNAdmin-button23" ion-button color="dark" block on-click="goToIniciarSesiN()">
     Cerrar Sesión
   </button>
 </ion-content>

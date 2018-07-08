@@ -44,21 +44,21 @@
 
               <ion-item>
                   <ion-label >Fecha de Inicio:</ion-label>
-                  <ion-datetime [(ngModel)]='vehiculoobj.Fecha_Inicio' displayFormat="MMM DD YYYY" ></ion-datetime>
+                  <ion-datetime [(ngModel)]='pedidoobj.Fecha_Inicio' displayFormat="MMM DD YYYY" ></ion-datetime>
                 </ion-item>
                 <ion-item>
                     <ion-label>Fecha de Fin:</ion-label>
-                    <ion-datetime [(ngModel)]='vehiculoobj.Fecha_Final' displayFormat="MMM DD YYYY " ></ion-datetime>
+                    <ion-datetime [(ngModel)]='pedidoobj.Fecha_Final' displayFormat="MMM DD YYYY " ></ion-datetime>
                   </ion-item>
                   <ion-item>
                       <h2>Total</h2>
                      <ion-item >
-                      <h1>{{this.vehiculoobj.Fecha_Final}}</h1>
+                      <h1>{{this.vehiculoobj.Factor_de_Renta}}</h1>
                      </ion-item>
                       
                   </ion-item>
 
-                  <button id="configuraciNAdmin-button17" ion-button color="secondary" block icon-right on-click="goToAAdirAseguradora()">
+                  <button id="configuraciNAdmin-button17" ion-button color="secondary" block icon-right on-click="AddPedidoSolicitud(pedidoobj,vehiculoobj)">
                      Confirmar Pedido
                 
                     </button>
