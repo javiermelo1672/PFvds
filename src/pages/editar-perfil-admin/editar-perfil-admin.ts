@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import{PersonaService} from '../../services/Persona/persona-service';
-import { Persona } from '../../models/Persona';
+import { PersonaEmpresa } from '../../models/PersonaEmpresa';
 import {AlertController} from 'ionic-angular';
 import{ConfiguraciNAdminPage}  from '../configuraci-nadmin/configuraci-nadmin';
 import { AngularFireAuth } from "angularfire2/auth";
@@ -18,7 +18,7 @@ import { AngularFireAuth } from "angularfire2/auth";
   templateUrl: 'editar-perfil-admin.html',
 })
 export class EditarPerfilAdminPage {
-  personasobj:Persona;
+  personasobj:PersonaEmpresa;
   ids:string;
   displayname:string;
 
@@ -31,7 +31,7 @@ export class EditarPerfilAdminPage {
     
    }
  
-   updatePersona(personaobj:Persona)
+   updatePersona(personasobj:PersonaEmpresa)
    {
        this.afAuth.authState.subscribe(user => {
          if (!user) {
@@ -41,7 +41,7 @@ export class EditarPerfilAdminPage {
        });
        this.ids=this.afAuth.auth.currentUser.uid;
        
-       this.personaser.editUsuarioItem(personaobj,this.ids).then(()=> {
+       this.personaser.editUsuariosItem(personasobj,this.ids).then(()=> {
           this.navCtrl.push(ConfiguraciNAdminPage);
        });
     

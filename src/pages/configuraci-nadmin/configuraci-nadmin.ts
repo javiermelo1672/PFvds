@@ -13,6 +13,7 @@ import { AngularFireAuth } from "angularfire2/auth";
 import { VerusuariosPage } from '../verusuarios/verusuarios';
 import { RegistroAdminPage } from '../registro-admin/registro-admin';
 import { AgregarEmpleadoPage } from '../agregar-empleado/agregar-empleado';
+import { PersonaEmpresa } from '../../models/PersonaEmpresa';
 @Component({
   selector: 'page-configuraci-nadmin',
   templateUrl: 'configuraci-nadmin.html'
@@ -33,6 +34,18 @@ export class ConfiguraciNAdminPage {
     Tipo: ' ',
     
   }
+
+  items:PersonaEmpresa = {
+    Edad:' ',
+    Fecha_Registro:null,
+    Foto: ' ',
+    Num_Documento:' ',
+    Foto_documento:' ',
+    Telefono: ' ',
+    Nombre: ' ',
+    Tipo: ' ',
+  }
+  
   id:string;
   usuariosreference$: Observable <Persona[]>;
   usariosobj:Persona;

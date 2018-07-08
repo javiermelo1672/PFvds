@@ -1,5 +1,5 @@
 
-export interface Persona {
+export interface PersonaEmpresa {
     key?: string;
     Edad: string;
     Fecha_Registro:string;
