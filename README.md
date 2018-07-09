@@ -1,8 +1,9 @@
-![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2Fportada.png?alt=media&token=f0640bee-39a6-4062-8320-3b8298d2db31)
+![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2Fportada%20vehicolda.png?alt=media&token=d5a4def7-08b4-4119-8f0b-da9b8b7b00cd)
 
 # VEHICOLDA APP
+![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2Flogo.png?alt=media&token=380dd0e1-75c9-45ec-adbf-34025a42c24e)
 
-Este es un proyecto para implementar una aplicación con Ionic para pedir Vehículos.
+Este es un proyecto de Mobility for Real Services para implementar una aplicación con Ionic para pedir Vehículos.
 
 ## Planteamiento del problema
 
@@ -118,6 +119,8 @@ Brindar una alternativa a los ciudadanos y extranjeros la posibilidad de solicit
 ## PLAN DE CALIDAD
 [Plan de SQA PDF](https://github.com/javiermelo1672/PFvds/blob/master/Gantt%20Project/Plan%20de%20Aseguramiento%20de%20Calidad.pdf)
 
+## PLAN DE PRUEBAS DE sOFTWARE
+[Plan de pruebas de software MD](hhttps://github.com/javiermelo1672/PFvds/blob/master/PlanPruebas.md)
 
 ## Autores
 * **Javier Duvan Hospital Melo**-- *Desarrollo y diseño*
