@@ -5,39 +5,55 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding id="page21">
+<ion-content class="card-background-page">
+    <ion-card>
   <form id="aAdirAseg-form11">
     <div id="aAdirAseg-markdown16" style="text-align:center;" class="show-list-numbers-and-dots"></div>
-     <ion-item>   
-    <ion-label>
-      Nit
-    </ion-label>
-    <ion-input type="text" [(ngModel)]='aseguradoraobj.Codigo' name="Codigo" placeholder=""></ion-input>
-  </ion-item>
+    <ion-item>
+      <ion-label>
+        Nit
+      </ion-label>
+      <ion-input type="text" [(ngModel)]='aseguradoraobj.Codigo' name="Codigo" placeholder="" required></ion-input>
+    </ion-item>
 
-  <ion-item id="aAdirAseg-input48">
-    <ion-label>
-      Fecha Inicio
-    </ion-label>
-    <ion-input type="date" [(ngModel)]='aseguradoraobj.Fecha_Inicio' name="Fecha_Inicio" placeholder=""></ion-input>
-  </ion-item>
+    <ion-item id="aAdirAseg-input48">
+      <ion-label>
+        Fecha Inicio
+      </ion-label>
+      <ion-input type="date" [(ngModel)]='aseguradoraobj.Fecha_Inicio' name="Fecha_Inicio" placeholder=""required></ion-input>
+    </ion-item>
 
-  <ion-item id="aAdirAseg-input49">
-    <ion-label>
-      Fecha Vencimiento
-    </ion-label>
-    <ion-input type="date" [(ngModel)]='aseguradoraobj.Fecha_Vencimiento' name="Fecha_Vencimiento" placeholder=""></ion-input>
-  </ion-item>
+    <ion-item id="aAdirAseg-input49">
+      <ion-label>
+        Fecha Vencimiento
+      </ion-label>
+      <ion-input type="date" [(ngModel)]='aseguradoraobj.Fecha_Vencimiento' name="Fecha_Vencimiento" placeholder="" required></ion-input>
+    </ion-item>
 
-  <ion-item id="aAdirAseg-input50">
-    <ion-label>
-      Razón Social
-    </ion-label>
-    <ion-input type="text" [(ngModel)]='aseguradoraobj.Nombre' name="Nombre" placeholder=""></ion-input>
-  </ion-item>
-       </form>
+    <ion-item id="aAdirAseg-input50">
+      <ion-label>
+        Razón Social
+      </ion-label>
+      <ion-input type="text" [(ngModel)]='aseguradoraobj.Nombre' name="Nombre" placeholder="" required></ion-input>
+    </ion-item>
+  </form>
   <button id="aAdirAseg-button26" ion-button color="positive" block on-click=" addAseguradora(aseguradoraobj)" block>
     Registrar
   </button>
-   
+</ion-card>
+  <ion-list>
+     <h1>Seguros Registrados</h1>
+    <ion-item *ngFor="let item of aseguradorareference$ | async " detail-push >
+
+        <ion-card >
+        <ion-icon name="clipboard"></ion-icon>
+      <h3>Nit: {{item.Codigo}}</h3>
+      <h3>Razón Social {{item.Nombre}}</h3>
+      <h3> Fecha Inicio: {{item.Fecha_Inicio}}</h3>
+      <h3>Fecha Vencimiento:{{item.Fecha_Vencimiento}}</h3>
+      
+        </ion-card>
+    </ion-item>
+  </ion-list>
+
 </ion-content>
