@@ -15,13 +15,13 @@
                 <ion-label>
                   Correo
                 </ion-label>
-                <ion-input type="text" [(ngModel)]=" userst.email" name="Usuario" placeholder=""></ion-input>
+                <ion-input type="text" [(ngModel)]=" userst.email" required="true" name="Usuario" placeholder=""></ion-input>
               </ion-item>
               <ion-item id="iniciarSesiN-input2">
                 <ion-label>
                   Contraseña
                 </ion-label>
-                <ion-input type="password"  [(ngModel)]=" userst.password" name="Contraseña" placeholder=""></ion-input>
+                <ion-input type="password"  [(ngModel)]=" userst.password" required="true" name="Contraseña" placeholder=""></ion-input>
               </ion-item>
             </ion-list>
             <button id="iniciarSesiN-button1" ion-button color="positive" block (click)="goToHola(userst)" >

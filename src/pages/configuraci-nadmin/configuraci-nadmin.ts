@@ -18,6 +18,7 @@ import { PersonaEmpresa } from '../../models/PersonaEmpresa';
   selector: 'page-configuraci-nadmin',
   templateUrl: 'configuraci-nadmin.html'
 })
+
 export class ConfiguraciNAdminPage {
   // this tells the tabs component which Pages
   // should be each tab's root Page
@@ -82,7 +83,13 @@ export class ConfiguraciNAdminPage {
   goToIniciarSesiN()
   {
     this.navCtrl.push(IniciarSesiNPage);
-   
+    let elements = document.querySelectorAll(".tabbar");
+
+    if (elements != null) {
+        Object.keys(elements).map((key) => {
+            elements[key].style.display = 'none';
+        });
+    }
   }
    goToVerusuarios(){
      this.navCtrl.push(VerusuariosPage);
