@@ -7,6 +7,7 @@ import {PedidosService} from '../../services/Pedidos/pedidos-service';
 import {Pedido} from '../../models/Pedido';
 import {AlertController} from 'ionic-angular';
 import { AngularFireAuth } from "angularfire2/auth";
+import { PanelInicialPage } from '../../pages/panel-inicial/panel-inicial';
 @IonicPage()
 @Component({
   selector: 'page-hacerpedido',
@@ -98,6 +99,7 @@ export class HacerpedidoPage {
       item.Usuario_Aprobo='Sin Asignar';
       item.Codigo_checkout='Sin Asignar';
       items.Estado='No disponible'
+      items.Factor_de_Renta= this.valorstring;
 this.vehiculosser.updateVehiculosItem(items).then(ref=>{
 });
 this.pedidoser.addPedido(item).then(ref=>{
@@ -108,10 +110,11 @@ let alert = this.alertCtrl.create({
 title: 'CORECTO',
 subTitle: 'Correcto tu pedido ha sido creado',
 buttons: ['Aceptar']
-
+ 
 
 });
 alert.present();
+this.navCtrl.push( PanelInicialPage);
   }
   catch(e)
   {

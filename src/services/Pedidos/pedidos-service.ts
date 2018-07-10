@@ -18,6 +18,11 @@ export class PedidosService {
      {
          return this.Pedidoref.push(item);
      }
+     getSpecificPedido(key)
+        {
+         return this.Pedidoref= this.db.list<Pedido>('/BasedeDatosF/Empresa/Pedido', ref=> ref.orderByChild('Usuario_Solicitud').equalTo(key));
+             
+        }
 
     
 }

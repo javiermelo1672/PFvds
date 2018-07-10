@@ -6,6 +6,7 @@ import {Observable} from 'rxjs/Observable';
 import {AlertController} from 'ionic-angular';
 import { AngularFireModule } from 'angularfire2';
 import {AngularFireDatabase} from 'angularfire2/database';
+import { PedidosencursoPage } from '../../pages/pedidosencurso/pedidosencurso';
 @Component({
   selector: 'page-panel-inicial',
   templateUrl: 'panel-inicial.html'
@@ -32,6 +33,10 @@ export class PanelInicialPage {
         }));
       });
   
+  }
+  goTopedidos(params){
+    if (!params) params = {};
+    this.navCtrl.push(PedidosencursoPage);
   }
   
 }

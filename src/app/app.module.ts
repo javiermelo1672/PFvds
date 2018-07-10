@@ -24,7 +24,7 @@ import { AAdirAseguradoraPage } from '../pages/a-adir-aseguradora/a-adir-asegura
 import { AAdirVehCuloPage } from '../pages/a-adir-veh-culo/a-adir-veh-culo';
 import { CarrosPage } from '../pages/carros/carros';
 import { CarrosAdminPage } from '../pages/carros-admin/carros-admin';
-
+import { PedidosencursoPage } from '../pages/pedidosencurso/pedidosencurso';
 //Añadiendo librerias Angular fire para conexión con firebase
 
 import { AngularFireModule } from 'angularfire2'; 
@@ -75,7 +75,8 @@ import { Network } from '@ionic-native/network';
     AAdirVehCuloPage,
     CarrosPage,
     CarrosAdminPage,
-    VerusuariosPage
+    VerusuariosPage,
+    PedidosencursoPage
   ],
   imports: [
     BrowserModule,
@@ -110,7 +111,8 @@ import { Network } from '@ionic-native/network';
     AAdirVehCuloPage,
     CarrosPage,
     CarrosAdminPage,
-    VerusuariosPage
+    VerusuariosPage,
+    PedidosencursoPage
   ],
   providers: [
     StatusBar,
