@@ -271,8 +271,8 @@ Por medio de este documento se realiza una descripción de las pruebas que se re
 
 **Matriz de Responsabilidades**
 
- ![Matriz]()
-
+ ![Matriz](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FMatriz%201.PNG?alt=media&token=2d5354ac-917d-4bfb-8984-0bcc8062e711)
+ ![Matriz](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2FMatriz%202.PNG?alt=media&token=1f409aea-72da-43f6-ada3-157b2b29b8ed)
 **Cronograma**
 
 ![EDT](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2F1.png?alt=media&token=8abe0ac7-9c41-4540-99db-906f6f4754b3)
