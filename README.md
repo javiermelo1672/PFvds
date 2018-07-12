@@ -1,3 +1,12 @@
+## Autores
+* **Javier Duvan Hospital Melo**-- *Desarrollo y diseño*
+* **Olga Lucia Moyano Orjuela**-- *Desarrollo y diseño*
+* **Jorge Andres Lucero Hernández** -- *Desarrollo y diseño*
+* **Edwin Aarón García Pulido** -- *Desarrollo y diseño*
+* **Nicolas Meneses Guerrero** -- *Desarrollo y diseño*
+* **Juan Camilo Sarmiento Reyes** -- *Desarrollo y diseño*
+* **Anderson Orlando Ramirez Lamprea** -- *Desarrollo y diseño*
+
 ![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Info_Proyecto%2Fportada%20vehicolda.png?alt=media&token=d5a4def7-08b4-4119-8f0b-da9b8b7b00cd)
 
 # VEHICOLDA APP
@@ -137,14 +146,6 @@ Se añade despliegue en un dispositivo iPhone con iOS 11, a continuación se pre
 ![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Despliegue%2F3cONFIG.png?alt=media&token=661713f5-0db3-44f7-829b-f53d18686703)
 ### Panel del Admin
 ![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Despliegue%2F4aDMIN.png?alt=media&token=94d138d5-5f06-416a-b371-9d2e45a803b4)
-## Autores
-* **Javier Duvan Hospital Melo**-- *Desarrollo y diseño*
-* **Olga Lucia Moyano Orjuela**-- *Desarrollo y diseño*
-* **Jorge Andres Lucero Hernández** -- *Desarrollo y diseño*
-* **Edwin Aarón García Pulido** -- *Desarrollo y diseño*
-* **Nicolas Meneses Guerrero** -- *Desarrollo y diseño*
-* **Juan Camilo Sarmiento Reyes** -- *Desarrollo y diseño*
-* **Anderson Orlando Ramirez Lamprea** -- *Desarrollo y diseño*
 
 
 
