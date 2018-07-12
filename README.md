@@ -130,6 +130,26 @@ Brindar una alternativa a los ciudadanos y extranjeros la posibilidad de solicit
 
 Se añade despliegue en un dispositivo iPhone con iOS 11, a continuación se presentan algunas capturas del aplicativo 
 
+# Panel del Cliente
+![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Despliegue%2FIMG_5818.PNG?alt=media&token=7c025c0d-f284-44c6-94a3-3f4d278167ea) 
+![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Despliegue%2FIMG_5819.PNG?alt=media&token=a58dfcbf-05e4-409d-a446-d13290d8cccb)
+![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Despliegue%2FIMG_5820.PNG?alt=media&token=39538f1b-a2c3-402e-af18-9c02ab832783)
+![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Despliegue%2FIMG_5821.PNG?alt=media&token=6c53e86a-5593-4ade-9608-41b6dd3d665e)
+![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Despliegue%2FIMG_5822.PNG?alt=media&token=74700374-ea03-4e4b-ae1e-c1812445ec57)
+![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Despliegue%2FIMG_5818.PNG?alt=media&token=7c025c0d-f284-44c6-94a3-3f4d278167ea)
+![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Despliegue%2FIMG_5824.PNG?alt=media&token=7afbe7de-07ec-4ebe-a48b-438466ca2070)
+![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Despliegue%2FIMG_5825.PNG?alt=media&token=15a3d385-9626-4d5c-8dd9-8553b346f14d)
+![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Despliegue%2FIMG_5826.PNG?alt=media&token=14afaf45-119d-4045-a3c6-c4a0995be476)
+![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Despliegue%2FIMG_5827.PNG?alt=media&token=b0207543-469f-4d1e-b19d-92e62d5de474)
+![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Despliegue%2FIMG_5828.PNG?alt=media&token=65dec50d-2b05-44d8-9a77-63f4a9f8fd7c)
+![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Despliegue%2FIMG_5831.PNG?alt=media&token=7844d628-bf3e-46ae-8c8a-59611d1825d2)
+![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Despliegue%2FIMG_5832.PNG?alt=media&token=f147ac01-b3d0-4dd7-a7e0-fc9671aa2928)
+#Panel del Admin
+![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Despliegue%2FIMG_5833.PNG?alt=media&token=d2537e5c-0254-496e-ab2e-5f5314daa441)
+![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Despliegue%2FIMG_5834.PNG?alt=media&token=a07798c7-3173-48f7-a6b3-f4ff65902936)
+![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Despliegue%2FIMG_5835.PNG?alt=media&token=1d0acd80-c006-4ddd-9b84-9a24244edce3)
+![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Despliegue%2FIMG_5836.PNG?alt=media&token=5d8847c8-bcb4-4649-8066-56417d42cf54)
+![Logo](https://firebasestorage.googleapis.com/v0/b/vehicolda-d1b72.appspot.com/o/Despliegue%2FIMG_5837.PNG?alt=media&token=eb0cb71c-356d-45e2-8b44-fd95e0070e7a)
 
 ## Autores
 * **Javier Duvan Hospital Melo**-- *Desarrollo y diseño*
