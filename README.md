@@ -119,7 +119,7 @@ Brindar una alternativa a los ciudadanos y extranjeros la posibilidad de solicit
 ## PLAN DE CALIDAD
 [Plan de SQA PDF](https://github.com/javiermelo1672/PFvds/blob/master/Gantt%20Project/Plan%20de%20Aseguramiento%20de%20Calidad.pdf)
 
-## PLAN DE PRUEBAS DE sOFTWARE
+## PLAN DE PRUEBAS DE SOFTWARE
 [Plan de pruebas de software MD](https://github.com/javiermelo1672/PFvds/blob/master/PlanPruebas.md)
 
 ## Autores

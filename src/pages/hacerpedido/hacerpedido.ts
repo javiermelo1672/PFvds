@@ -61,6 +61,7 @@ export class HacerpedidoPage {
         }));
         
       });
+      
 
       this.valorstring=this.vehiculoobj.Factor_de_Renta.toString();
       this.valorint= Number(this.valorstring);

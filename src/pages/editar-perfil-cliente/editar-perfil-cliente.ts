@@ -47,7 +47,8 @@ export class EditarPerfilClientePage {
       this.ids=this.afAuth.auth.currentUser.uid;
       
       this.personaser.editUsuarioItem(personaobj,this.ids).then(()=> {
-         this.navCtrl.push(ConfiguraciNClientePage);
+        //CORRECION DE ERROR
+        this.navCtrl.push(ConfiguraciNClientePage);
       });
    
     

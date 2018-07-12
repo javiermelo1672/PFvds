@@ -31,7 +31,7 @@ export class RegistroPage {
         const result=await this.afAuth.auth.createUserWithEmailAndPassword(userst.email,userst.password);
         this.ids=this.afAuth.auth.currentUser.uid;
         console.log(this.ids);
-  
+        console.log(result);
         //Obtener Fecha del Registro
         let date = new Date();
         
@@ -64,6 +64,7 @@ export class RegistroPage {
       
        }
        catch(e){
+         console.log(e);
         let alert = this.alertCtrl.create({
           title: 'ERROR',
           subTitle: 'Por favor verifica la información ingresada',

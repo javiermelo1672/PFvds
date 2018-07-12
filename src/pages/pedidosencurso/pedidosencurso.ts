@@ -70,6 +70,8 @@ export class PedidosencursoPage {
         }));
       });
 
+      var referenciapedido=this.pedidoser.getSpecificPedido(this.ids).valueChanges();
+      
      console.log(this.item.Vehiculo);
      
   }
