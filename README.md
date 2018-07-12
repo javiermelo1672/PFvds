@@ -122,6 +122,15 @@ Brindar una alternativa a los ciudadanos y extranjeros la posibilidad de solicit
 ## PLAN DE PRUEBAS DE SOFTWARE
 [Plan de pruebas de software MD](https://github.com/javiermelo1672/PFvds/blob/master/PlanPruebas.md)
 
+## ESPECIFICACION CASO DE PRUEBA 
+
+[Plan de pruebas de software MD](https://github.com/javiermelo1672/PFvds/blob/master/Gantt%20Project/IniciarSesion.doc.pdf)
+
+## DESPLIEGUE DE LA APLICACIÓN
+
+Se añade despliegue en un dispositivo iPhone con iOS 11, a continuación se presentan algunas capturas del aplicativo 
+
+
 ## Autores
 * **Javier Duvan Hospital Melo**-- *Desarrollo y diseño*
 * **Olga Lucia Moyano Orjuela**-- *Desarrollo y diseño*
